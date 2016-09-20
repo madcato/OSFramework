@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B108F941D91BF100095B312 /* OSiCloudDataBackupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B108F931D91BF100095B312 /* OSiCloudDataBackupTests.swift */; };
 		0B6B98A51D917F97004E1031 /* OSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B6B989B1D917F97004E1031 /* OSFramework.framework */; };
 		0B6B98AA1D917F97004E1031 /* OSFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B98A91D917F97004E1031 /* OSFrameworkTests.swift */; };
 		0B6B98AC1D917F97004E1031 /* OSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6B989E1D917F97004E1031 /* OSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -14,6 +15,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0B108FC61D91C4CD0095B312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B108FC11D91C4CC0095B312 /* OSFrameworkRunningTester.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0B108F9E1D91C4CC0095B312;
+			remoteInfo = OSFrameworkRunningTester;
+		};
+		0B108FC81D91C4CD0095B312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B108FC11D91C4CC0095B312 /* OSFrameworkRunningTester.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0B108FB21D91C4CC0095B312;
+			remoteInfo = OSFrameworkRunningTesterTests;
+		};
 		0B6B98A61D917F97004E1031 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0B6B98921D917F97004E1031 /* Project object */;
@@ -24,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B108F931D91BF100095B312 /* OSiCloudDataBackupTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSiCloudDataBackupTests.swift; sourceTree = "<group>"; };
+		0B108FC11D91C4CC0095B312 /* OSFrameworkRunningTester.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OSFrameworkRunningTester.xcodeproj; path = OSFrameworkRunningTester/OSFrameworkRunningTester.xcodeproj; sourceTree = "<group>"; };
 		0B6B989B1D917F97004E1031 /* OSFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6B989E1D917F97004E1031 /* OSFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSFramework.h; sourceTree = "<group>"; };
 		0B6B989F1D917F97004E1031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,9 +69,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B108FC21D91C4CC0095B312 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B108FC71D91C4CD0095B312 /* OSFrameworkRunningTester.app */,
+				0B108FC91D91C4CD0095B312 /* OSFrameworkRunningTesterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		0B6B98911D917F97004E1031 = {
 			isa = PBXGroup;
 			children = (
+				0B108FC11D91C4CC0095B312 /* OSFrameworkRunningTester.xcodeproj */,
 				0B6B989D1D917F97004E1031 /* OSFramework */,
 				0B6B98A81D917F97004E1031 /* OSFrameworkTests */,
 				0B6B989C1D917F97004E1031 /* Products */,
@@ -85,6 +112,7 @@
 			children = (
 				0B6B98A91D917F97004E1031 /* OSFrameworkTests.swift */,
 				0B6B98AB1D917F97004E1031 /* Info.plist */,
+				0B108F931D91BF100095B312 /* OSiCloudDataBackupTests.swift */,
 			);
 			path = OSFrameworkTests;
 			sourceTree = "<group>";
@@ -172,6 +200,12 @@
 			mainGroup = 0B6B98911D917F97004E1031;
 			productRefGroup = 0B6B989C1D917F97004E1031 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0B108FC21D91C4CC0095B312 /* Products */;
+					ProjectRef = 0B108FC11D91C4CC0095B312 /* OSFrameworkRunningTester.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0B6B989A1D917F97004E1031 /* OSFramework */,
@@ -179,6 +213,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0B108FC71D91C4CD0095B312 /* OSFrameworkRunningTester.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OSFrameworkRunningTester.app;
+			remoteRef = 0B108FC61D91C4CD0095B312 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0B108FC91D91C4CD0095B312 /* OSFrameworkRunningTesterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OSFrameworkRunningTesterTests.xctest;
+			remoteRef = 0B108FC81D91C4CD0095B312 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0B6B98991D917F97004E1031 /* Resources */ = {
@@ -211,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B6B98AA1D917F97004E1031 /* OSFrameworkTests.swift in Sources */,
+				0B108F941D91BF100095B312 /* OSiCloudDataBackupTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +466,7 @@
 				0B6B98B11D917F97004E1031 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B6B98B21D917F97004E1031 /* Build configuration list for PBXNativeTarget "OSFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +475,7 @@
 				0B6B98B41D917F97004E1031 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
