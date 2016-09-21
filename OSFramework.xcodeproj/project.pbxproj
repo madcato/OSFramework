@@ -12,6 +12,16 @@
 		0B6B98AA1D917F97004E1031 /* OSFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B98A91D917F97004E1031 /* OSFrameworkTests.swift */; };
 		0B6B98AC1D917F97004E1031 /* OSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6B989E1D917F97004E1031 /* OSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B6B98C11D917FF5004E1031 /* OSiCloudDataBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B98C01D917FF5004E1031 /* OSiCloudDataBackup.swift */; };
+		0BC2CD341D92BFB000ACEA5F /* OSCircleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD311D92BFB000ACEA5F /* OSCircleLabel.swift */; };
+		0BC2CD351D92BFB000ACEA5F /* OSCircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD321D92BFB000ACEA5F /* OSCircleImageView.swift */; };
+		0BC2CD361D92BFB000ACEA5F /* OSEditableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD331D92BFB000ACEA5F /* OSEditableTableViewController.swift */; };
+		0BC2CD3A1D92BFC900ACEA5F /* Serializator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD381D92BFC800ACEA5F /* Serializator.swift */; };
+		0BC2CD3B1D92BFC900ACEA5F /* SerializableWebQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD391D92BFC900ACEA5F /* SerializableWebQueries.swift */; };
+		0BC2CD3E1D92BFDF00ACEA5F /* OSSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD3D1D92BFDF00ACEA5F /* OSSystem.swift */; };
+		0BC2CD411D92C00C00ACEA5F /* OSEmailValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD3F1D92C00C00ACEA5F /* OSEmailValidatorTest.swift */; };
+		0BC2CD421D92C00C00ACEA5F /* OSDNIValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD401D92C00C00ACEA5F /* OSDNIValidatorTest.swift */; };
+		0BC2CD441D9303BB00ACEA5F /* OSEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD431D9303BB00ACEA5F /* OSEmailValidator.swift */; };
+		0BC2CD461D93052D00ACEA5F /* OSDNIValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD451D93052D00ACEA5F /* OSDNIValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +58,16 @@
 		0B6B98A91D917F97004E1031 /* OSFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSFrameworkTests.swift; sourceTree = "<group>"; };
 		0B6B98AB1D917F97004E1031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B6B98C01D917FF5004E1031 /* OSiCloudDataBackup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSiCloudDataBackup.swift; sourceTree = "<group>"; };
+		0BC2CD311D92BFB000ACEA5F /* OSCircleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCircleLabel.swift; sourceTree = "<group>"; };
+		0BC2CD321D92BFB000ACEA5F /* OSCircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCircleImageView.swift; sourceTree = "<group>"; };
+		0BC2CD331D92BFB000ACEA5F /* OSEditableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSEditableTableViewController.swift; sourceTree = "<group>"; };
+		0BC2CD381D92BFC800ACEA5F /* Serializator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializator.swift; sourceTree = "<group>"; };
+		0BC2CD391D92BFC900ACEA5F /* SerializableWebQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializableWebQueries.swift; sourceTree = "<group>"; };
+		0BC2CD3D1D92BFDF00ACEA5F /* OSSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSystem.swift; sourceTree = "<group>"; };
+		0BC2CD3F1D92C00C00ACEA5F /* OSEmailValidatorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSEmailValidatorTest.swift; sourceTree = "<group>"; };
+		0BC2CD401D92C00C00ACEA5F /* OSDNIValidatorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSDNIValidatorTest.swift; sourceTree = "<group>"; };
+		0BC2CD431D9303BB00ACEA5F /* OSEmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSEmailValidator.swift; sourceTree = "<group>"; };
+		0BC2CD451D93052D00ACEA5F /* OSDNIValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSDNIValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +120,12 @@
 		0B6B989D1D917F97004E1031 /* OSFramework */ = {
 			isa = PBXGroup;
 			children = (
+				0BC2CD3C1D92BFCF00ACEA5F /* data */,
+				0BC2CD371D92BFB700ACEA5F /* formats */,
+				0BC2CD2E1D92BFA500ACEA5F /* views */,
 				0B6B989E1D917F97004E1031 /* OSFramework.h */,
+				0BC2CD3D1D92BFDF00ACEA5F /* OSSystem.swift */,
 				0B6B989F1D917F97004E1031 /* Info.plist */,
-				0B6B98C01D917FF5004E1031 /* OSiCloudDataBackup.swift */,
 			);
 			path = OSFramework;
 			sourceTree = "<group>";
@@ -113,8 +136,39 @@
 				0B6B98A91D917F97004E1031 /* OSFrameworkTests.swift */,
 				0B6B98AB1D917F97004E1031 /* Info.plist */,
 				0B108F931D91BF100095B312 /* OSiCloudDataBackupTests.swift */,
+				0BC2CD3F1D92C00C00ACEA5F /* OSEmailValidatorTest.swift */,
+				0BC2CD401D92C00C00ACEA5F /* OSDNIValidatorTest.swift */,
 			);
 			path = OSFrameworkTests;
+			sourceTree = "<group>";
+		};
+		0BC2CD2E1D92BFA500ACEA5F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				0BC2CD311D92BFB000ACEA5F /* OSCircleLabel.swift */,
+				0BC2CD321D92BFB000ACEA5F /* OSCircleImageView.swift */,
+				0BC2CD331D92BFB000ACEA5F /* OSEditableTableViewController.swift */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		0BC2CD371D92BFB700ACEA5F /* formats */ = {
+			isa = PBXGroup;
+			children = (
+				0BC2CD381D92BFC800ACEA5F /* Serializator.swift */,
+				0BC2CD391D92BFC900ACEA5F /* SerializableWebQueries.swift */,
+				0BC2CD431D9303BB00ACEA5F /* OSEmailValidator.swift */,
+				0BC2CD451D93052D00ACEA5F /* OSDNIValidator.swift */,
+			);
+			name = formats;
+			sourceTree = "<group>";
+		};
+		0BC2CD3C1D92BFCF00ACEA5F /* data */ = {
+			isa = PBXGroup;
+			children = (
+				0B6B98C01D917FF5004E1031 /* OSiCloudDataBackup.swift */,
+			);
+			name = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC2CD3A1D92BFC900ACEA5F /* Serializator.swift in Sources */,
+				0BC2CD441D9303BB00ACEA5F /* OSEmailValidator.swift in Sources */,
+				0BC2CD351D92BFB000ACEA5F /* OSCircleImageView.swift in Sources */,
+				0BC2CD461D93052D00ACEA5F /* OSDNIValidator.swift in Sources */,
+				0BC2CD3B1D92BFC900ACEA5F /* SerializableWebQueries.swift in Sources */,
+				0BC2CD361D92BFB000ACEA5F /* OSEditableTableViewController.swift in Sources */,
+				0BC2CD3E1D92BFDF00ACEA5F /* OSSystem.swift in Sources */,
+				0BC2CD341D92BFB000ACEA5F /* OSCircleLabel.swift in Sources */,
 				0B6B98C11D917FF5004E1031 /* OSiCloudDataBackup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +324,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B6B98AA1D917F97004E1031 /* OSFrameworkTests.swift in Sources */,
+				0BC2CD411D92C00C00ACEA5F /* OSEmailValidatorTest.swift in Sources */,
+				0BC2CD421D92C00C00ACEA5F /* OSDNIValidatorTest.swift in Sources */,
 				0B108F941D91BF100095B312 /* OSiCloudDataBackupTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

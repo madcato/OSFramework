@@ -51,37 +51,24 @@ public class OSiCloudDataBackup: NSObject {
     /** 
      State of the object
         - SeeAlso OSiCloudDataBackupState
-
     */
     public var state: OSiCloudDataBackupState = .unknown
 
-    /**
-     Backup data. This property obly has value after calling **load** method.
-     */
+    /// Backup data. This property obly has value after calling **load** method.
     public var storedData: Data?
 
-    /**
-     Date of store of the data if exists.
-     This property obly has value after calling **load** method.
-    */
+    /// Date of store of the data if exists. This property obly has value after calling **load** method.
     public var storeDate: Date?
 
-    /** 
-     Delegate objcet
-    */
+    /// Delegate object
     public weak var delegate: OSiCloudDataBackupDelegate?
 
-    /**
-     Initialization. Delegate is mandatory.
-    */
+    /// Initialization. Delegate is mandatory.
     public init(delegate: OSiCloudDataBackupDelegate) {
         self.delegate = delegate
     }
 
-    /**
-     Start the execution of the process. Checks if iCloud is enabled and allowed.
-     Also checks if data is available.
-    */
+    /// Start the execution of the process. Checks if iCloud is enabled and allowed. Also checks if data is available.
     public func startUp() {
         check()
     }
@@ -133,9 +120,7 @@ public class OSiCloudDataBackup: NSObject {
         check()
     }
 
-    /**
-     Checks state of iCloud and reads all the data if available
-    */
+    /// Checks state of iCloud and reads all the data if available
     private func check() {
         if isiCloudContainerAvailable() {
             state = .iCloudAllowed
@@ -146,6 +131,7 @@ public class OSiCloudDataBackup: NSObject {
 
         load()
     }
+
     /**
      Reads an object from  ubiquity container
 
@@ -171,6 +157,11 @@ public class OSiCloudDataBackup: NSObject {
         iCloudStore.synchronize()
     }
 
+    /**
+     Checks if there is access to iCloud.
+
+     - Returns: **true** if iCloud is enabled
+    */
     private func isiCloudContainerAvailable()->Bool {
         if let _ = FileManager.default.ubiquityIdentityToken {
             return true
