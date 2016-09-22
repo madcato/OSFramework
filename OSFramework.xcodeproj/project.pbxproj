@@ -21,6 +21,7 @@
 		0BC2CD421D92C00C00ACEA5F /* OSDNIValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD401D92C00C00ACEA5F /* OSDNIValidatorTest.swift */; };
 		0BC2CD441D9303BB00ACEA5F /* OSEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD431D9303BB00ACEA5F /* OSEmailValidator.swift */; };
 		0BC2CD461D93052D00ACEA5F /* OSDNIValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD451D93052D00ACEA5F /* OSDNIValidator.swift */; };
+		0BC2CD4B1D94757A00ACEA5F /* String+subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD4A1D94757A00ACEA5F /* String+subscript.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		0BC2CD401D92C00C00ACEA5F /* OSDNIValidatorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSDNIValidatorTest.swift; sourceTree = "<group>"; };
 		0BC2CD431D9303BB00ACEA5F /* OSEmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSEmailValidator.swift; sourceTree = "<group>"; };
 		0BC2CD451D93052D00ACEA5F /* OSDNIValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSDNIValidator.swift; sourceTree = "<group>"; };
+		0BC2CD4A1D94757A00ACEA5F /* String+subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+subscript.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		0BC2CD371D92BFB700ACEA5F /* formats */ = {
 			isa = PBXGroup;
 			children = (
+				0BC2CD4A1D94757A00ACEA5F /* String+subscript.swift */,
 				0BC2CD381D92BFC800ACEA5F /* Serializator.swift */,
 				0BC2CD431D9303BB00ACEA5F /* OSEmailValidator.swift */,
 				0BC2CD451D93052D00ACEA5F /* OSDNIValidator.swift */,
@@ -310,6 +313,7 @@
 				0BC2CD461D93052D00ACEA5F /* OSDNIValidator.swift in Sources */,
 				0BC2CD361D92BFB000ACEA5F /* OSEditableTableViewController.swift in Sources */,
 				0BC2CD3E1D92BFDF00ACEA5F /* OSSystem.swift in Sources */,
+				0BC2CD4B1D94757A00ACEA5F /* String+subscript.swift in Sources */,
 				0BC2CD341D92BFB000ACEA5F /* OSCircleLabel.swift in Sources */,
 				0B6B98C11D917FF5004E1031 /* OSiCloudDataBackup.swift in Sources */,
 			);
