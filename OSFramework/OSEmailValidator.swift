@@ -8,8 +8,18 @@
 
 import UIKit
 
+/**
+ Email validator class
+*/
 public class OSEmailValidator: NSObject {
 
+    /**
+     Validate email
+
+     - Parameter email: email to be validated
+
+     - Returns: **true** if email is valid, **false** otherwise
+    */
     public func isValid(email: String) -> Bool {
         let emailRegex =
         "(?:[a-z0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[a-z0-9!#$%\\&'*+/=?\\^_`{|}" +

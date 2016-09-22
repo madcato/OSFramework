@@ -16,7 +16,6 @@
 		0BC2CD351D92BFB000ACEA5F /* OSCircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD321D92BFB000ACEA5F /* OSCircleImageView.swift */; };
 		0BC2CD361D92BFB000ACEA5F /* OSEditableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD331D92BFB000ACEA5F /* OSEditableTableViewController.swift */; };
 		0BC2CD3A1D92BFC900ACEA5F /* Serializator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD381D92BFC800ACEA5F /* Serializator.swift */; };
-		0BC2CD3B1D92BFC900ACEA5F /* SerializableWebQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD391D92BFC900ACEA5F /* SerializableWebQueries.swift */; };
 		0BC2CD3E1D92BFDF00ACEA5F /* OSSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD3D1D92BFDF00ACEA5F /* OSSystem.swift */; };
 		0BC2CD411D92C00C00ACEA5F /* OSEmailValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD3F1D92C00C00ACEA5F /* OSEmailValidatorTest.swift */; };
 		0BC2CD421D92C00C00ACEA5F /* OSDNIValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD401D92C00C00ACEA5F /* OSDNIValidatorTest.swift */; };
@@ -62,7 +61,6 @@
 		0BC2CD321D92BFB000ACEA5F /* OSCircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCircleImageView.swift; sourceTree = "<group>"; };
 		0BC2CD331D92BFB000ACEA5F /* OSEditableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSEditableTableViewController.swift; sourceTree = "<group>"; };
 		0BC2CD381D92BFC800ACEA5F /* Serializator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializator.swift; sourceTree = "<group>"; };
-		0BC2CD391D92BFC900ACEA5F /* SerializableWebQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializableWebQueries.swift; sourceTree = "<group>"; };
 		0BC2CD3D1D92BFDF00ACEA5F /* OSSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSystem.swift; sourceTree = "<group>"; };
 		0BC2CD3F1D92C00C00ACEA5F /* OSEmailValidatorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSEmailValidatorTest.swift; sourceTree = "<group>"; };
 		0BC2CD401D92C00C00ACEA5F /* OSDNIValidatorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSDNIValidatorTest.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				0BC2CD381D92BFC800ACEA5F /* Serializator.swift */,
-				0BC2CD391D92BFC900ACEA5F /* SerializableWebQueries.swift */,
 				0BC2CD431D9303BB00ACEA5F /* OSEmailValidator.swift */,
 				0BC2CD451D93052D00ACEA5F /* OSDNIValidator.swift */,
 			);
@@ -311,7 +308,6 @@
 				0BC2CD441D9303BB00ACEA5F /* OSEmailValidator.swift in Sources */,
 				0BC2CD351D92BFB000ACEA5F /* OSCircleImageView.swift in Sources */,
 				0BC2CD461D93052D00ACEA5F /* OSDNIValidator.swift in Sources */,
-				0BC2CD3B1D92BFC900ACEA5F /* SerializableWebQueries.swift in Sources */,
 				0BC2CD361D92BFB000ACEA5F /* OSEditableTableViewController.swift in Sources */,
 				0BC2CD3E1D92BFDF00ACEA5F /* OSSystem.swift in Sources */,
 				0BC2CD341D92BFB000ACEA5F /* OSCircleLabel.swift in Sources */,

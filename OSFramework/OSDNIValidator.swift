@@ -8,8 +8,20 @@
 
 import UIKit
 
+/**
+ Spanish DNI and NIE validator.
+ It does not validate NIF.
+*/
 public class OSDNIValidator: NSObject {
 
+    /**
+     Validate the correctness of a DNI number. Only DNI and NIE are validated,
+     NIF behaviour is not tested.
+
+     - Parameter dni: DNI to validate
+
+     - Returns: **true** if valid
+    */
     public func isValid(dni: String) -> Bool {
         guard dni.characters.count == 9 else { return false }
 
