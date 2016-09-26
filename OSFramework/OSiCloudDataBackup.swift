@@ -64,7 +64,7 @@ public class OSiCloudDataBackup: NSObject {
     public weak var delegate: OSiCloudDataBackupDelegate?
 
     /// Initialization. Delegate is mandatory.
-    public init(delegate: OSiCloudDataBackupDelegate) {
+    public init(delegate: OSiCloudDataBackupDelegate?) {
         self.delegate = delegate
     }
 
@@ -102,6 +102,12 @@ public class OSiCloudDataBackup: NSObject {
             state = .dataAvailable
             delegate?.didUpdateState(manager: self)
         }
+    }
+
+    /// Remove backup and its date
+    public func removeData() {
+        self.writeObject(object: nil, forKey: dataKey)
+        self.writeObject(object: nil, forKey: dateKey)
     }
 
     private func configureChangeNotification() {
@@ -151,7 +157,7 @@ public class OSiCloudDataBackup: NSObject {
      - Parameter object: object to store
      - Parameter key: key of the value to retrive
      */
-    private func writeObject(object: Any, forKey key: String) {
+    private func writeObject(object: Any?, forKey key: String) {
         let iCloudStore = NSUbiquitousKeyValueStore.default()
         iCloudStore.set(object, forKey: key)
         iCloudStore.synchronize()
