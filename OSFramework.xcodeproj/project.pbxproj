@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B108F941D91BF100095B312 /* OSiCloudDataBackupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B108F931D91BF100095B312 /* OSiCloudDataBackupTests.swift */; };
+		0B334BA41D9925D500DE68CA /* PublicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B334BA11D99253500DE68CA /* PublicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B6B98A51D917F97004E1031 /* OSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B6B989B1D917F97004E1031 /* OSFramework.framework */; };
 		0B6B98AA1D917F97004E1031 /* OSFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B98A91D917F97004E1031 /* OSFrameworkTests.swift */; };
 		0B6B98AC1D917F97004E1031 /* OSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6B989E1D917F97004E1031 /* OSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		0B108F931D91BF100095B312 /* OSiCloudDataBackupTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSiCloudDataBackupTests.swift; sourceTree = "<group>"; };
 		0B108FC11D91C4CC0095B312 /* OSFrameworkRunningTester.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OSFrameworkRunningTester.xcodeproj; path = OSFrameworkRunningTester/OSFrameworkRunningTester.xcodeproj; sourceTree = "<group>"; };
+		0B334BA11D99253500DE68CA /* PublicHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicHeader.h; sourceTree = "<group>"; };
 		0B6B989B1D917F97004E1031 /* OSFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6B989E1D917F97004E1031 /* OSFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSFramework.h; sourceTree = "<group>"; };
 		0B6B989F1D917F97004E1031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				0B6B989E1D917F97004E1031 /* OSFramework.h */,
 				0BC2CD3D1D92BFDF00ACEA5F /* OSSystem.swift */,
 				0B6B989F1D917F97004E1031 /* Info.plist */,
+				0B334BA11D99253500DE68CA /* PublicHeader.h */,
 			);
 			path = OSFramework;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B6B98AC1D917F97004E1031 /* OSFramework.h in Headers */,
+				0B334BA41D9925D500DE68CA /* PublicHeader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

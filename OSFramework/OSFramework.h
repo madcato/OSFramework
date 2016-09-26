@@ -15,5 +15,5 @@ FOUNDATION_EXPORT double OSFrameworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char OSFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <OSFramework/PublicHeader.h>
-
+#import "PublicHeader.h"
 

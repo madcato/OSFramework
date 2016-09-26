@@ -13,7 +13,7 @@ import UIKit
  change of the state of the class or to indicate some error.
  - Author Daniel Vela
 */
-public protocol OSiCloudDataBackupDelegate: class {
+@objc public protocol OSiCloudDataBackupDelegate: class {
     /** 
      Called when the state is changed.
      - Parameter manager: object that fires this method who had changed the state
@@ -37,12 +37,12 @@ public class OSiCloudDataBackup: NSObject {
         - dataAvailable: if iCloud is allowed, then is checked if data is available.
         - error: if an error occurred
      */
-    public enum OSiCloudDataBackupState {
+    @objc public enum OSiCloudDataBackupState: Int {
         case unknown
         case iCloudNotAllowed
         case iCloudAllowed
         case dataAvailable
-        case error(errorDescription: String)
+        case error
     }
 
     private var dataKey = "OSiCloudDataBackupData"
