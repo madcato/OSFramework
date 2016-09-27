@@ -9,6 +9,4 @@
 #ifndef PublicHeader_h
 #define PublicHeader_h
 
-#include "OSFramework-Swift.h"
-
 #endif /* PublicHeader_h */
