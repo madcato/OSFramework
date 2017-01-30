@@ -59,6 +59,7 @@
 		0B2FA9B51E389B4D003A1AF7 /* AppDelegate+ChangeRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+ChangeRootController.swift"; sourceTree = "<group>"; };
 		0B2FA9B91E389BF5003A1AF7 /* OSLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLoginViewModel.swift; sourceTree = "<group>"; };
 		0B334BA11D99253500DE68CA /* PublicHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicHeader.h; sourceTree = "<group>"; };
+		0B5652C71E3F3C5C00A42AF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B6B989B1D917F97004E1031 /* OSFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6B989E1D917F97004E1031 /* OSFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSFramework.h; sourceTree = "<group>"; };
 		0B6B989F1D917F97004E1031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 				0BC2CD3D1D92BFDF00ACEA5F /* OSSystem.swift */,
 				0B6B989F1D917F97004E1031 /* Info.plist */,
 				0B334BA11D99253500DE68CA /* PublicHeader.h */,
+				0B5652C71E3F3C5C00A42AF3 /* AppDelegate.swift */,
 			);
 			path = OSFramework;
 			sourceTree = "<group>";
