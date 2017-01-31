@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B108F941D91BF100095B312 /* OSiCloudDataBackupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B108F931D91BF100095B312 /* OSiCloudDataBackupTests.swift */; };
+		0B2F86501E40EEEE0075097E /* String+urlEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F864F1E40EEEE0075097E /* String+urlEncode.swift */; };
 		0B2FA9BA1E389BF5003A1AF7 /* OSLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2FA9B91E389BF5003A1AF7 /* OSLoginViewModel.swift */; };
 		0B2FA9BB1E389C69003A1AF7 /* AppDelegate+ChangeRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2FA9B51E389B4D003A1AF7 /* AppDelegate+ChangeRootController.swift */; };
 		0B334BA41D9925D500DE68CA /* PublicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B334BA11D99253500DE68CA /* PublicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,6 +57,7 @@
 /* Begin PBXFileReference section */
 		0B108F931D91BF100095B312 /* OSiCloudDataBackupTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSiCloudDataBackupTests.swift; sourceTree = "<group>"; };
 		0B108FC11D91C4CC0095B312 /* OSFrameworkRunningTester.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OSFrameworkRunningTester.xcodeproj; path = OSFrameworkRunningTester/OSFrameworkRunningTester.xcodeproj; sourceTree = "<group>"; };
+		0B2F864F1E40EEEE0075097E /* String+urlEncode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+urlEncode.swift"; sourceTree = "<group>"; };
 		0B2FA9B51E389B4D003A1AF7 /* AppDelegate+ChangeRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+ChangeRootController.swift"; sourceTree = "<group>"; };
 		0B2FA9B91E389BF5003A1AF7 /* OSLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLoginViewModel.swift; sourceTree = "<group>"; };
 		0B334BA11D99253500DE68CA /* PublicHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicHeader.h; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				0BC2CD4A1D94757A00ACEA5F /* String+subscript.swift */,
+				0B2F864F1E40EEEE0075097E /* String+urlEncode.swift */,
 				0BC2CD381D92BFC800ACEA5F /* Serializator.swift */,
 				0BC2CD431D9303BB00ACEA5F /* OSEmailValidator.swift */,
 				0BC2CD451D93052D00ACEA5F /* OSDNIValidator.swift */,
@@ -349,6 +352,7 @@
 				0BC2CD461D93052D00ACEA5F /* OSDNIValidator.swift in Sources */,
 				0BC2CD361D92BFB000ACEA5F /* OSEditableTableViewController.swift in Sources */,
 				0BC2CD3E1D92BFDF00ACEA5F /* OSSystem.swift in Sources */,
+				0B2F86501E40EEEE0075097E /* String+urlEncode.swift in Sources */,
 				0B2FA9BB1E389C69003A1AF7 /* AppDelegate+ChangeRootController.swift in Sources */,
 				0BC2CD4B1D94757A00ACEA5F /* String+subscript.swift in Sources */,
 				0BC2CD341D92BFB000ACEA5F /* OSCircleLabel.swift in Sources */,
