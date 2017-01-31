@@ -12,11 +12,13 @@ public enum LoginState {
     case `init`
     case progressing
     case ok
+    case recoverOk
     case error(Int, String)
 }
 
 public protocol OSLoginInteractor {
     func doLogin(_ email: String, password: String, onOK: @escaping () -> (), onError: @escaping (Int, String) -> ());
+    func doRecover(_ email: String, onOK: @escaping () -> (), onError: @escaping (Int, String) -> ());
 }
 
 public protocol OSSavedLoginInteractor {
@@ -31,6 +33,7 @@ public protocol OSLoginViewModelProtocol {
     var stateDidChange: ((OSLoginViewModelProtocol) -> ())? { get set }
     init(loginInteractor: OSLoginInteractor, savedLoginInteractor: OSSavedLoginInteractor)
     func doLogin(_ email: String, password: String, remember: Bool)
+    func doRecover(_ email: String)
     
     var login: String? { get }
     var loginDidChange: ((OSLoginViewModelProtocol) -> ())? { get set }
@@ -101,6 +104,15 @@ public class OSLoginViewModel: OSLoginViewModelProtocol {
                 self.state = .ok
         }) { [unowned self] (code: Int, message: String) in
                 self.state = .error(code, message)
+        }
+    }
+    
+    public func doRecover(_ email: String) {
+        state = .progressing
+        loginInteractor.doRecover(email, onOK: { [unowned self] in
+            self.state = .recoverOk
+        }) { [unowned self] (code: Int, message: String) in
+            self.state = .error(code, message)
         }
     }
     
