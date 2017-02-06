@@ -28,6 +28,7 @@
 		0BC2CD441D9303BB00ACEA5F /* OSEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD431D9303BB00ACEA5F /* OSEmailValidator.swift */; };
 		0BC2CD461D93052D00ACEA5F /* OSDNIValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD451D93052D00ACEA5F /* OSDNIValidator.swift */; };
 		0BC2CD4B1D94757A00ACEA5F /* String+subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD4A1D94757A00ACEA5F /* String+subscript.swift */; };
+		0BF666C21E48BEF90065D217 /* SimplePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF666C11E48BEF90065D217 /* SimplePersistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		0BC2CD431D9303BB00ACEA5F /* OSEmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSEmailValidator.swift; sourceTree = "<group>"; };
 		0BC2CD451D93052D00ACEA5F /* OSDNIValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSDNIValidator.swift; sourceTree = "<group>"; };
 		0BC2CD4A1D94757A00ACEA5F /* String+subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+subscript.swift"; sourceTree = "<group>"; };
+		0BF666C11E48BEF90065D217 /* SimplePersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePersistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		0B6B989D1D917F97004E1031 /* OSFramework */ = {
 			isa = PBXGroup;
 			children = (
+				0BF666BE1E48BEE30065D217 /* persistence */,
 				0B2FA9B81E389BE8003A1AF7 /* login */,
 				0B2FA9B41E389B43003A1AF7 /* utils */,
 				0BC2CD3C1D92BFCF00ACEA5F /* data */,
@@ -205,6 +208,14 @@
 				0B6B98C01D917FF5004E1031 /* OSiCloudDataBackup.swift */,
 			);
 			name = data;
+			sourceTree = "<group>";
+		};
+		0BF666BE1E48BEE30065D217 /* persistence */ = {
+			isa = PBXGroup;
+			children = (
+				0BF666C11E48BEF90065D217 /* SimplePersistence.swift */,
+			);
+			name = persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +363,7 @@
 				0BC2CD461D93052D00ACEA5F /* OSDNIValidator.swift in Sources */,
 				0BC2CD361D92BFB000ACEA5F /* OSEditableTableViewController.swift in Sources */,
 				0BC2CD3E1D92BFDF00ACEA5F /* OSSystem.swift in Sources */,
+				0BF666C21E48BEF90065D217 /* SimplePersistence.swift in Sources */,
 				0B2F86501E40EEEE0075097E /* String+urlEncode.swift in Sources */,
 				0B2FA9BB1E389C69003A1AF7 /* AppDelegate+ChangeRootController.swift in Sources */,
 				0BC2CD4B1D94757A00ACEA5F /* String+subscript.swift in Sources */,

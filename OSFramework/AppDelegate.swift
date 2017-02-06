@@ -51,9 +51,9 @@ func handleHappicScheme(_ url: URL) -> Bool {
         
         let otp = pathComponents[3]
         
-        let mail = UserDefaults.standard.string(forKey: HPCLoginViewController.kUserEmailID)
+        let mail = SimplePersistence.string(forKey: HPCLoginViewController.kUserEmailID)
         
-        let name = UserDefaults.standard.string(forKey: HPCLoginViewController.kUserNameID)
+        let name = SimplePersistence.string(forKey: HPCLoginViewController.kUserNameID)
         
         doRegister(otp, name: name!, mail: mail!)
         return true
