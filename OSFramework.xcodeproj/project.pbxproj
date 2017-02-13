@@ -12,6 +12,8 @@
 		0B2FA9BA1E389BF5003A1AF7 /* OSLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2FA9B91E389BF5003A1AF7 /* OSLoginViewModel.swift */; };
 		0B2FA9BB1E389C69003A1AF7 /* AppDelegate+ChangeRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2FA9B51E389B4D003A1AF7 /* AppDelegate+ChangeRootController.swift */; };
 		0B334BA41D9925D500DE68CA /* PublicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B334BA11D99253500DE68CA /* PublicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B62F2C81E51BFDE00CB634F /* EoloSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62F2C61E51BFDE00CB634F /* EoloSender.swift */; };
+		0B62F2C91E51BFDE00CB634F /* SerializableWebQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62F2C71E51BFDE00CB634F /* SerializableWebQuery.swift */; };
 		0B6B98A51D917F97004E1031 /* OSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B6B989B1D917F97004E1031 /* OSFramework.framework */; };
 		0B6B98AA1D917F97004E1031 /* OSFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B98A91D917F97004E1031 /* OSFrameworkTests.swift */; };
 		0B6B98AC1D917F97004E1031 /* OSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6B989E1D917F97004E1031 /* OSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,6 +65,8 @@
 		0B2FA9B91E389BF5003A1AF7 /* OSLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLoginViewModel.swift; sourceTree = "<group>"; };
 		0B334BA11D99253500DE68CA /* PublicHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicHeader.h; sourceTree = "<group>"; };
 		0B5652C71E3F3C5C00A42AF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B62F2C61E51BFDE00CB634F /* EoloSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EoloSender.swift; sourceTree = "<group>"; };
+		0B62F2C71E51BFDE00CB634F /* SerializableWebQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializableWebQuery.swift; sourceTree = "<group>"; };
 		0B6B989B1D917F97004E1031 /* OSFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6B989E1D917F97004E1031 /* OSFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSFramework.h; sourceTree = "<group>"; };
 		0B6B989F1D917F97004E1031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -129,6 +133,15 @@
 			name = login;
 			sourceTree = "<group>";
 		};
+		0B62F2C31E51BE7F00CB634F /* eolo */ = {
+			isa = PBXGroup;
+			children = (
+				0B62F2C61E51BFDE00CB634F /* EoloSender.swift */,
+				0B62F2C71E51BFDE00CB634F /* SerializableWebQuery.swift */,
+			);
+			name = eolo;
+			sourceTree = "<group>";
+		};
 		0B6B98911D917F97004E1031 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +164,7 @@
 		0B6B989D1D917F97004E1031 /* OSFramework */ = {
 			isa = PBXGroup;
 			children = (
+				0B62F2C31E51BE7F00CB634F /* eolo */,
 				0BF666BE1E48BEE30065D217 /* persistence */,
 				0B2FA9B81E389BE8003A1AF7 /* login */,
 				0B2FA9B41E389B43003A1AF7 /* utils */,
@@ -355,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B62F2C91E51BFDE00CB634F /* SerializableWebQuery.swift in Sources */,
 				0B8BE4801D9BB2B700A31E03 /* json.swift in Sources */,
 				0BC2CD3A1D92BFC900ACEA5F /* Serializator.swift in Sources */,
 				0BC2CD441D9303BB00ACEA5F /* OSEmailValidator.swift in Sources */,
@@ -365,6 +380,7 @@
 				0BC2CD3E1D92BFDF00ACEA5F /* OSSystem.swift in Sources */,
 				0BF666C21E48BEF90065D217 /* SimplePersistence.swift in Sources */,
 				0B2F86501E40EEEE0075097E /* String+urlEncode.swift in Sources */,
+				0B62F2C81E51BFDE00CB634F /* EoloSender.swift in Sources */,
 				0B2FA9BB1E389C69003A1AF7 /* AppDelegate+ChangeRootController.swift in Sources */,
 				0BC2CD4B1D94757A00ACEA5F /* String+subscript.swift in Sources */,
 				0BC2CD341D92BFB000ACEA5F /* OSCircleLabel.swift in Sources */,
