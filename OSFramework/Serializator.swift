@@ -116,14 +116,17 @@ import Foundation
 /**
  Object serializator class
 */
-class Serializator {
+public class Serializator {
 
+    public init() {
+        
+    }
     /**
      Delete the serializator file for a class in the documents directory
 
      - Parameter fileName: Name of the file without directory part
      */
-    func deleteSerial(fileName: String)  {
+    public func deleteSerial(fileName: String)  {
         let formFilePath = self.formFilePath(className: fileName)
         do {
             try FileManager.default.removeItem(atPath: formFilePath)
@@ -137,7 +140,7 @@ class Serializator {
 
      - Parameter fileName: Name of the file without directory part
     */
-    func restoreObject(fileName: String) -> Any? {
+    public func restoreObject(fileName: String) -> Any? {
         let formFilePath = self.formFilePath(className: fileName)
         let object = NSKeyedUnarchiver.unarchiveObject(withFile: formFilePath)
         return object as Any?
@@ -149,7 +152,7 @@ class Serializator {
      - Parameter object: This object must implement **NSCoding** class
      - Parameter fileName: Name of the file without directory part
     */
-    func saveObject(object: Any, fileName: String) {
+    public func saveObject(object: Any, fileName: String) {
         let formFilePath = self.formFilePath(className: fileName)
         NSKeyedArchiver.archiveRootObject(object, toFile: formFilePath)
     }
