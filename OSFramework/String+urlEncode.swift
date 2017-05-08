@@ -8,15 +8,37 @@
 
 import Foundation
 
-public extension String
-{
-    public func encodeUrl() -> String?
-    {
-        return self.addingPercentEncoding( withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
+// scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]
+public enum URLPiece {
+    case user
+    case password
+    case host
+    case path
+    case query
+    case fragment
+}
+
+public extension String {
+    public func encodeUrl(piece: URLPiece) -> String? {
+        var characterSet:CharacterSet
+        switch piece {
+        case .user:
+            characterSet = NSCharacterSet.urlUserAllowed
+        case .password:
+            characterSet = NSCharacterSet.urlPasswordAllowed
+        case .host:
+            characterSet = NSCharacterSet.urlHostAllowed
+        case .path:
+            characterSet = NSCharacterSet.urlPathAllowed
+        case .query:
+            characterSet = NSCharacterSet.urlQueryAllowed
+        case .fragment:
+            characterSet = NSCharacterSet.urlFragmentAllowed
+        }
+        return self.addingPercentEncoding(withAllowedCharacters: characterSet)
     }
-    public func decodeUrl() -> String?
-    {
+
+    public func decodeUrl() -> String? {
         return self.removingPercentEncoding
     }
-    
 }
