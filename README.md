@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/madcato/OSFramework.svg?branch=master)](https://travis-ci.org/madcato/OSFramework)
+[![codecov](https://codecov.io/gh/madcato/OSFramework/branch/master/graph/badge.svg)](https://codecov.io/gh/madcato/OSFramework)
 
 # OSFramework
 
