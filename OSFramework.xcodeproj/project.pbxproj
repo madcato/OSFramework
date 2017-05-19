@@ -39,20 +39,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0B108FC61D91C4CD0095B312 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0B108FC11D91C4CC0095B312 /* OSFrameworkRunningTester.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0B108F9E1D91C4CC0095B312;
-			remoteInfo = OSFrameworkRunningTester;
-		};
-		0B108FC81D91C4CD0095B312 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0B108FC11D91C4CC0095B312 /* OSFrameworkRunningTester.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0B108FB21D91C4CC0095B312;
-			remoteInfo = OSFrameworkRunningTesterTests;
-		};
 		0B6B98A61D917F97004E1031 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0B6B98921D917F97004E1031 /* Project object */;
@@ -64,7 +50,6 @@
 
 /* Begin PBXFileReference section */
 		0B108F931D91BF100095B312 /* OSiCloudDataBackupTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSiCloudDataBackupTests.swift; sourceTree = "<group>"; };
-		0B108FC11D91C4CC0095B312 /* OSFrameworkRunningTester.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OSFrameworkRunningTester.xcodeproj; path = OSFrameworkRunningTester/OSFrameworkRunningTester.xcodeproj; sourceTree = "<group>"; };
 		0B2F864F1E40EEEE0075097E /* String+urlEncode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+urlEncode.swift"; sourceTree = "<group>"; };
 		0B2FA9B51E389B4D003A1AF7 /* AppDelegate+ChangeRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+ChangeRootController.swift"; sourceTree = "<group>"; };
 		0B2FA9B91E389BF5003A1AF7 /* OSLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLoginViewModel.swift; sourceTree = "<group>"; };
@@ -118,15 +103,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B108FC21D91C4CC0095B312 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0B108FC71D91C4CD0095B312 /* OSFrameworkRunningTester.app */,
-				0B108FC91D91C4CD0095B312 /* OSFrameworkRunningTesterTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		0B2FA9B41E389B43003A1AF7 /* utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +132,6 @@
 		0B6B98911D917F97004E1031 = {
 			isa = PBXGroup;
 			children = (
-				0B108FC11D91C4CC0095B312 /* OSFrameworkRunningTester.xcodeproj */,
 				0B6B989D1D917F97004E1031 /* OSFramework */,
 				0B6B98A81D917F97004E1031 /* OSFrameworkTests */,
 				0B6B989C1D917F97004E1031 /* Products */,
@@ -188,7 +163,8 @@
 				0B334BA11D99253500DE68CA /* PublicHeader.h */,
 				0B5652C71E3F3C5C00A42AF3 /* AppDelegate.swift */,
 			);
-			path = OSFramework;
+			name = OSFramework;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		0B6B98A81D917F97004E1031 /* OSFrameworkTests */ = {
@@ -200,7 +176,8 @@
 				0BC2CD3F1D92C00C00ACEA5F /* OSEmailValidatorTest.swift */,
 				0BC2CD401D92C00C00ACEA5F /* OSDNIValidatorTest.swift */,
 			);
-			path = OSFrameworkTests;
+			name = OSFrameworkTests;
+			path = Tests/OSFrameworkTests;
 			sourceTree = "<group>";
 		};
 		0BC2CD2E1D92BFA500ACEA5F /* views */ = {
@@ -331,12 +308,6 @@
 			mainGroup = 0B6B98911D917F97004E1031;
 			productRefGroup = 0B6B989C1D917F97004E1031 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 0B108FC21D91C4CC0095B312 /* Products */;
-					ProjectRef = 0B108FC11D91C4CC0095B312 /* OSFrameworkRunningTester.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				0B6B989A1D917F97004E1031 /* OSFramework */,
@@ -344,23 +315,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		0B108FC71D91C4CD0095B312 /* OSFrameworkRunningTester.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = OSFrameworkRunningTester.app;
-			remoteRef = 0B108FC61D91C4CD0095B312 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0B108FC91D91C4CD0095B312 /* OSFrameworkRunningTesterTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = OSFrameworkRunningTesterTests.xctest;
-			remoteRef = 0B108FC81D91C4CD0095B312 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0B6B98991D917F97004E1031 /* Resources */ = {
@@ -542,7 +496,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = OSFramework/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -565,7 +519,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = OSFramework/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -582,7 +536,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
-				INFOPLIST_FILE = OSFrameworkTests/Info.plist;
+				INFOPLIST_FILE = Tests/OSFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.OSFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -595,7 +549,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
-				INFOPLIST_FILE = OSFrameworkTests/Info.plist;
+				INFOPLIST_FILE = Tests/OSFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.OSFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
