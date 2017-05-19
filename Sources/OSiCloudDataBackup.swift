@@ -47,7 +47,7 @@ public class OSiCloudDataBackup: NSObject {
 
     private var dataKey = "OSiCloudDataBackupData"
     private var dateKey = "OSiCloudDataBackupDate"
-    
+
     /** 
      State of the object
         - SeeAlso OSiCloudDataBackupState
@@ -97,7 +97,7 @@ public class OSiCloudDataBackup: NSObject {
     private func load() {
         storedData = object(key: dataKey) as? Data
         storeDate = object(key: dateKey) as? Date
-        
+
         if storedData != nil {
             state = .dataAvailable
             delegate?.didUpdateState(manager: self)
@@ -168,11 +168,10 @@ public class OSiCloudDataBackup: NSObject {
 
      - Returns: **true** if iCloud is enabled
     */
-    private func isiCloudContainerAvailable()->Bool {
-        if let _ = FileManager.default.ubiquityIdentityToken {
+    private func isiCloudContainerAvailable() -> Bool {
+        if FileManager.default.ubiquityIdentityToken != nil {
             return true
-        }
-        else {
+        } else {
             return false
         }
     }

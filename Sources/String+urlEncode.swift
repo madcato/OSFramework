@@ -20,7 +20,7 @@ public enum URLPiece {
 
 public extension String {
     public func encodeUrl(piece: URLPiece) -> String? {
-        var characterSet:CharacterSet
+        var characterSet: CharacterSet
         switch piece {
         case .user:
             characterSet = NSCharacterSet.urlUserAllowed

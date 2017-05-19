@@ -8,9 +8,7 @@
 
 import Foundation
 
-
 // Sample code. Don't compile it
-
 
 @available(iOS 9.0, *)
 func application(_ application: UIApplication,
@@ -26,16 +24,12 @@ func application(_ application: UIApplication,
     if url.scheme == "happic" {
         return handleHappicScheme(url)
     }
-    
     return false
 }
 
 func handleHappicScheme(_ url: URL) -> Bool {
-    
     let pathComponents = url.pathComponents
-    
     let firstComponent = pathComponents[1]
-    
     if firstComponent == "share" {
         if self.session.userIdentification.count == 0 {
             // Login is not already made. Wait until made it
@@ -45,24 +39,18 @@ func handleHappicScheme(_ url: URL) -> Bool {
         }
         return true
     }
-    
     if firstComponent == "register" {
         HPCMomentManager.makeDataDirt()
-        
         let otp = pathComponents[3]
-        
         let mail = SimplePersistence.string(forKey: HPCLoginViewController.kUserEmailID)
-        
         let name = SimplePersistence.string(forKey: HPCLoginViewController.kUserNameID)
-        
         doRegister(otp, name: name!, mail: mail!)
         return true
     }
-    
     if url.host == "payment" {
         let result = firstComponent
         if result == "ok" {
-            // FIXME Reload picture
+            // Reload picture
             let center = NotificationCenter.default
             center.post(name: Notification.Name(rawValue: "PaymentResultOk"), object: nil)
         }
@@ -74,6 +62,5 @@ func handleHappicScheme(_ url: URL) -> Bool {
             // Do nothing
         }
     }
-    
     return false
 }

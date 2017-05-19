@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 //    class SerializableWebQuery: NSObject, NSCoding {
 //        var url: String
 //        
@@ -99,13 +98,19 @@ import Foundation
 //}
 
 //    func applicationWillResignActive(application: UIApplication) {
-//        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-//        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+//  // Sent when the application is about to move from active to inactive state.
+    //This can occur for certain types of temporary interruptions 
+    // (such as an incoming phone call or SMS message) or when the user quits 
+    // the application and it begins the transition to the background state.
+//  // Use this method to pause ongoing tasks, disable timers, and throttle
+    // down OpenGL ES frame rates. Games should use this method to pause the game.
 //        Serializator().saveObject(self.data, fileName: "testData")
 //    }
 //
 //    func applicationDidBecomeActive(application: UIApplication) {
-//        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+//        // Restart any tasks that were paused (or not yet started) while 
+          // the application was inactive. If the application was previously 
+          // in the background, optionally refresh the user interface.
 //        
 //        let restoredObjects = Serializator().restoreObject("testData")
 //        if let restoredObjects = restoredObjects {
@@ -119,14 +124,13 @@ import Foundation
 public class Serializator {
 
     public init() {
-        
     }
     /**
      Delete the serializator file for a class in the documents directory
 
      - Parameter fileName: Name of the file without directory part
      */
-    public func deleteSerial(fileName: String)  {
+    public func deleteSerial(fileName: String) {
         let formFilePath = self.formFilePath(className: fileName)
         do {
             try FileManager.default.removeItem(atPath: formFilePath)
@@ -164,7 +168,9 @@ public class Serializator {
      - Parameter className: Name of the class to be used as file name
     */
     private func formFilePath(className: String) -> String {
-        let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
+        let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory,
+                                                        FileManager.SearchPathDomainMask.userDomainMask,
+                                                        true)
         let documentsDirectory = paths[0]
         let formFileName = "\(className).serial"
         let formFilePath = "\(documentsDirectory)/\(formFileName)"

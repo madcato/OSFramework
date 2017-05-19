@@ -24,7 +24,6 @@
 		0B6B98AC1D917F97004E1031 /* OSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6B989E1D917F97004E1031 /* OSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B6B98C11D917FF5004E1031 /* OSiCloudDataBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B98C01D917FF5004E1031 /* OSiCloudDataBackup.swift */; };
 		0B8BE47F1D9BB2B700A31E03 /* NSDate+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BE47D1D9BB2B700A31E03 /* NSDate+JSON.swift */; };
-		0B8BE4801D9BB2B700A31E03 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BE47E1D9BB2B700A31E03 /* json.swift */; };
 		0BC2CD341D92BFB000ACEA5F /* OSCircleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD311D92BFB000ACEA5F /* OSCircleLabel.swift */; };
 		0BC2CD351D92BFB000ACEA5F /* OSCircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD321D92BFB000ACEA5F /* OSCircleImageView.swift */; };
 		0BC2CD361D92BFB000ACEA5F /* OSEditableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD331D92BFB000ACEA5F /* OSEditableTableViewController.swift */; };
@@ -70,7 +69,6 @@
 		0B6B98AB1D917F97004E1031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B6B98C01D917FF5004E1031 /* OSiCloudDataBackup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSiCloudDataBackup.swift; sourceTree = "<group>"; };
 		0B8BE47D1D9BB2B700A31E03 /* NSDate+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+JSON.swift"; sourceTree = "<group>"; };
-		0B8BE47E1D9BB2B700A31E03 /* json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = json.swift; sourceTree = "<group>"; };
 		0BC2CD311D92BFB000ACEA5F /* OSCircleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCircleLabel.swift; sourceTree = "<group>"; };
 		0BC2CD321D92BFB000ACEA5F /* OSCircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCircleImageView.swift; sourceTree = "<group>"; };
 		0BC2CD331D92BFB000ACEA5F /* OSEditableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSEditableTableViewController.swift; sourceTree = "<group>"; };
@@ -203,7 +201,6 @@
 				0BC2CD431D9303BB00ACEA5F /* OSEmailValidator.swift */,
 				0BC2CD451D93052D00ACEA5F /* OSDNIValidator.swift */,
 				0B8BE47D1D9BB2B700A31E03 /* NSDate+JSON.swift */,
-				0B8BE47E1D9BB2B700A31E03 /* json.swift */,
 			);
 			name = formats;
 			sourceTree = "<group>";
@@ -247,6 +244,7 @@
 				0B6B98971D917F97004E1031 /* Frameworks */,
 				0B6B98981D917F97004E1031 /* Headers */,
 				0B6B98991D917F97004E1031 /* Resources */,
+				0B3930631ECF827400E3DA6A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -333,13 +331,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B3930631ECF827400E3DA6A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0B6B98961D917F97004E1031 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0B62F2C91E51BFDE00CB634F /* SerializableWebQuery.swift in Sources */,
-				0B8BE4801D9BB2B700A31E03 /* json.swift in Sources */,
 				0BC2CD3A1D92BFC900ACEA5F /* Serializator.swift in Sources */,
 				0BC2CD441D9303BB00ACEA5F /* OSEmailValidator.swift in Sources */,
 				0B5A9D5E1EC04A0500F522E6 /* UIViewController+imageBackground.swift in Sources */,

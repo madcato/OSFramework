@@ -9,12 +9,10 @@
 import XCTest
 import OSFramework
 
-
-
 class OSiCloudDataBackupTests: XCTestCase {
 
     var manager: OSiCloudDataBackup?
-    var delegate: OSiCloudDataBackupDelegateMock?
+    var delegateMock: OSiCloudDataBackupDelegateMock?
 
     class OSiCloudDataBackupDelegateMock: OSiCloudDataBackupDelegate {
         func didUpdateState(manager: OSiCloudDataBackup) {
@@ -31,26 +29,19 @@ class OSiCloudDataBackupTests: XCTestCase {
         }
     }
 
-
     override func setUp() {
         super.setUp()
-        self.delegate = OSiCloudDataBackupDelegateMock()
-        self.manager = OSiCloudDataBackup(delegate: self.delegate!)
+        self.delegateMock = OSiCloudDataBackupDelegateMock()
+        self.manager = OSiCloudDataBackup(delegate: self.delegateMock!)
     }
-    
-    override func tearDown() {
 
+    override func tearDown() {
         self.manager = nil
-        self.delegate = nil
-        
+        self.delegateMock = nil
         super.tearDown()
     }
 
-
-
-
     func testExample() {
         manager?.startUp()
-
     }
 }

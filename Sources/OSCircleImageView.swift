@@ -16,11 +16,11 @@ class OSCircleImageView: UIImageView {
             createMask()
         }
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -31,10 +31,11 @@ class OSCircleImageView: UIImageView {
         let y = (self.bounds.size.height / 2) - CGFloat(radious)
         let width = CGFloat(radious) * 2
         let height = CGFloat(radious) * 2
-        
         let circleLayer = CAShapeLayer.init()
-        circleLayer.path = UIBezierPath.init(ovalIn: CGRect(x: x,y: y,width: width,height: height)).cgPath
-        
-        self.layer.mask = circleLayer;
+        circleLayer.path = UIBezierPath.init(ovalIn: CGRect(x: x,
+                                                            y: y,
+                                                            width: width,
+                                                            height: height)).cgPath
+        self.layer.mask = circleLayer
     }
 }

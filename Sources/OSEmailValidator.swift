@@ -34,4 +34,3 @@ public class OSEmailValidator: NSObject {
         return emailtest.evaluate(with: email)
     }
 }
-

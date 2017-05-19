@@ -40,4 +40,3 @@ public class OSDNIValidator: NSObject {
         return expectedLetter == providedLetter
     }
 }
-

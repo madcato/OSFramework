@@ -10,21 +10,18 @@ import XCTest
 @testable import OSFramework
 
 class OSEmailValidatorTest: XCTestCase {
-    
     var validator: OSEmailValidator!
-    
+
     override func setUp() {
         super.setUp()
-        
         validator = OSEmailValidator()
     }
-    
+
     override func tearDown() {
         validator = nil
-        
         super.tearDown()
     }
-    
+
     func testGoodEmail1() {
         XCTAssertTrue(validator.isValid(email: "dani_vela@me.com"), "Mail validator fail verifing a good email 1")
     }
@@ -40,5 +37,4 @@ class OSEmailValidatorTest: XCTestCase {
     func testBadEmail2() {
         XCTAssertFalse(validator.isValid(email:" veladan@gmail"), "Mail validator fail verifing a bad email 2")
     }
-    
 }

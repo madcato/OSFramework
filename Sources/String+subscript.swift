@@ -9,15 +9,15 @@
 import Foundation
 
 extension String {
-    var length : Int {
+    var length: Int {
         return self.characters.count
     }
-    
+
     subscript(integerIndex: Int) -> Character {
         let index = characters.index(startIndex, offsetBy: integerIndex)
         return self[index]
     }
-    
+
     subscript(integerRange: Range<Int>) -> String {
         let start = characters.index(startIndex, offsetBy: integerRange.lowerBound)
         let end = characters.index(startIndex, offsetBy: integerRange.upperBound)
