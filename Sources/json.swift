@@ -429,7 +429,7 @@ extension JSON : CustomStringConvertible {
                 withJSONObject: _value, options:opts)) as Data? {
                     if let result = NSString(
                         data:data, encoding:String.Encoding.utf8.rawValue
-                        ) as? String {
+                        ) as String? {
                             return result
                     }
             }
