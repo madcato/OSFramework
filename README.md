@@ -1,6 +1,8 @@
-# OSFramework
-Utility framework for iOS development
+[![Build Status](https://travis-ci.org/madcato/OSFramework.svg?branch=master)](https://travis-ci.org/madcato/OSFramework)
 
+# OSFramework
+
+Utility framework for iOS development
 
 ## Manual installation
 
