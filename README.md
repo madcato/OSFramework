@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/madcato/OSFramework.svg?branch=master)](https://travis-ci.org/madcato/OSFramework)
 [![codecov](https://codecov.io/gh/madcato/OSFramework/branch/master/graph/badge.svg)](https://codecov.io/gh/madcato/OSFramework)
 [![codebeat badge](https://codebeat.co/badges/40927ceb-ce64-4bcb-bb61-7bf6ea654982)](https://codebeat.co/projects/github-com-madcato-osframework-master)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # OSFramework
 
