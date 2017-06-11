@@ -16,7 +16,7 @@
 		0B5A9D5E1EC04A0500F522E6 /* UIViewController+imageBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5A9D5D1EC04A0500F522E6 /* UIViewController+imageBackground.swift */; };
 		0B5A9D601EC04A7E00F522E6 /* TransparentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5A9D5F1EC04A7E00F522E6 /* TransparentTableViewCell.swift */; };
 		0B5A9D621EC04A9C00F522E6 /* TitleShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5A9D611EC04A9C00F522E6 /* TitleShadowButton.swift */; };
-		0B5A9D641EC04ADA00F522E6 /* AppleUrlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5A9D631EC04ADA00F522E6 /* AppleUrlHelper.swift */; };
+		0B5A9D641EC04ADA00F522E6 /* UrlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5A9D631EC04ADA00F522E6 /* UrlHelper.swift */; };
 		0B62F2C81E51BFDE00CB634F /* EoloSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62F2C61E51BFDE00CB634F /* EoloSender.swift */; };
 		0B62F2C91E51BFDE00CB634F /* SerializableWebQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62F2C71E51BFDE00CB634F /* SerializableWebQuery.swift */; };
 		0B6B98A51D917F97004E1031 /* OSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B6B989B1D917F97004E1031 /* OSFramework.framework */; };
@@ -24,6 +24,7 @@
 		0B6B98AC1D917F97004E1031 /* OSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6B989E1D917F97004E1031 /* OSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B6B98C11D917FF5004E1031 /* OSiCloudDataBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B98C01D917FF5004E1031 /* OSiCloudDataBackup.swift */; };
 		0B8BE47F1D9BB2B700A31E03 /* NSDate+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BE47D1D9BB2B700A31E03 /* NSDate+JSON.swift */; };
+		0B93371A1EED5B34004C7C73 /* PropertyListHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9337191EED5B34004C7C73 /* PropertyListHelper.swift */; };
 		0BC2CD341D92BFB000ACEA5F /* OSCircleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD311D92BFB000ACEA5F /* OSCircleLabel.swift */; };
 		0BC2CD351D92BFB000ACEA5F /* OSCircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD321D92BFB000ACEA5F /* OSCircleImageView.swift */; };
 		0BC2CD361D92BFB000ACEA5F /* OSEditableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD331D92BFB000ACEA5F /* OSEditableTableViewController.swift */; };
@@ -58,7 +59,7 @@
 		0B5A9D5D1EC04A0500F522E6 /* UIViewController+imageBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+imageBackground.swift"; sourceTree = "<group>"; };
 		0B5A9D5F1EC04A7E00F522E6 /* TransparentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentTableViewCell.swift; sourceTree = "<group>"; };
 		0B5A9D611EC04A9C00F522E6 /* TitleShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleShadowButton.swift; sourceTree = "<group>"; };
-		0B5A9D631EC04ADA00F522E6 /* AppleUrlHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleUrlHelper.swift; sourceTree = "<group>"; };
+		0B5A9D631EC04ADA00F522E6 /* UrlHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlHelper.swift; sourceTree = "<group>"; };
 		0B62F2C61E51BFDE00CB634F /* EoloSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EoloSender.swift; sourceTree = "<group>"; };
 		0B62F2C71E51BFDE00CB634F /* SerializableWebQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializableWebQuery.swift; sourceTree = "<group>"; };
 		0B6B989B1D917F97004E1031 /* OSFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +70,7 @@
 		0B6B98AB1D917F97004E1031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B6B98C01D917FF5004E1031 /* OSiCloudDataBackup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSiCloudDataBackup.swift; sourceTree = "<group>"; };
 		0B8BE47D1D9BB2B700A31E03 /* NSDate+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+JSON.swift"; sourceTree = "<group>"; };
+		0B9337191EED5B34004C7C73 /* PropertyListHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListHelper.swift; sourceTree = "<group>"; };
 		0BC2CD311D92BFB000ACEA5F /* OSCircleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCircleLabel.swift; sourceTree = "<group>"; };
 		0BC2CD321D92BFB000ACEA5F /* OSCircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCircleImageView.swift; sourceTree = "<group>"; };
 		0BC2CD331D92BFB000ACEA5F /* OSEditableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSEditableTableViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				0B2FA9B51E389B4D003A1AF7 /* AppDelegate+ChangeRootController.swift */,
-				0B5A9D631EC04ADA00F522E6 /* AppleUrlHelper.swift */,
+				0B5A9D631EC04ADA00F522E6 /* UrlHelper.swift */,
+				0B9337191EED5B34004C7C73 /* PropertyListHelper.swift */,
 			);
 			name = utils;
 			sourceTree = "<group>";
@@ -359,7 +362,7 @@
 				0BC2CD351D92BFB000ACEA5F /* OSCircleImageView.swift in Sources */,
 				0B2FA9BA1E389BF5003A1AF7 /* OSLoginViewModel.swift in Sources */,
 				0BC2CD461D93052D00ACEA5F /* OSDNIValidator.swift in Sources */,
-				0B5A9D641EC04ADA00F522E6 /* AppleUrlHelper.swift in Sources */,
+				0B5A9D641EC04ADA00F522E6 /* UrlHelper.swift in Sources */,
 				0BC2CD361D92BFB000ACEA5F /* OSEditableTableViewController.swift in Sources */,
 				0B5A9D5A1EC049EA00F522E6 /* UIViewController+showAlert.swift in Sources */,
 				0BC2CD3E1D92BFDF00ACEA5F /* OSSystem.swift in Sources */,
@@ -372,6 +375,7 @@
 				0B8BE47F1D9BB2B700A31E03 /* NSDate+JSON.swift in Sources */,
 				0B5A9D601EC04A7E00F522E6 /* TransparentTableViewCell.swift in Sources */,
 				0B6B98C11D917FF5004E1031 /* OSiCloudDataBackup.swift in Sources */,
+				0B93371A1EED5B34004C7C73 /* PropertyListHelper.swift in Sources */,
 				0B5A9D621EC04A9C00F522E6 /* TitleShadowButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

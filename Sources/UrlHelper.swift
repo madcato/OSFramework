@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppleUrlHelper {
+class UrlHelper {
     func launch(_ urlStr: String) {
         if let url = URL(string: urlStr) {
             UIApplication.shared.openURL(url)
@@ -18,7 +18,7 @@ class AppleUrlHelper {
     }
 }
 
-class MapUrlHelper: AppleUrlHelper {
+class MapUrlHelper: UrlHelper {
     func directionsTo(address: String) {
         if let scapedAddress = address.addingPercentEncoding(
             withAllowedCharacters: CharacterSet.urlQueryAllowed) {
