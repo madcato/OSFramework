@@ -25,6 +25,7 @@
 		0B6B98C11D917FF5004E1031 /* OSiCloudDataBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B98C01D917FF5004E1031 /* OSiCloudDataBackup.swift */; };
 		0B8BE47F1D9BB2B700A31E03 /* NSDate+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BE47D1D9BB2B700A31E03 /* NSDate+JSON.swift */; };
 		0B93371A1EED5B34004C7C73 /* PropertyListHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9337191EED5B34004C7C73 /* PropertyListHelper.swift */; };
+		0BB172CF1EEFF8750039E93A /* CALayer+XibConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB172CE1EEFF8750039E93A /* CALayer+XibConfiguration.swift */; };
 		0BC2CD341D92BFB000ACEA5F /* OSCircleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD311D92BFB000ACEA5F /* OSCircleLabel.swift */; };
 		0BC2CD351D92BFB000ACEA5F /* OSCircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD321D92BFB000ACEA5F /* OSCircleImageView.swift */; };
 		0BC2CD361D92BFB000ACEA5F /* OSEditableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD331D92BFB000ACEA5F /* OSEditableTableViewController.swift */; };
@@ -71,6 +72,7 @@
 		0B6B98C01D917FF5004E1031 /* OSiCloudDataBackup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSiCloudDataBackup.swift; sourceTree = "<group>"; };
 		0B8BE47D1D9BB2B700A31E03 /* NSDate+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+JSON.swift"; sourceTree = "<group>"; };
 		0B9337191EED5B34004C7C73 /* PropertyListHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListHelper.swift; sourceTree = "<group>"; };
+		0BB172CE1EEFF8750039E93A /* CALayer+XibConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+XibConfiguration.swift"; sourceTree = "<group>"; };
 		0BC2CD311D92BFB000ACEA5F /* OSCircleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCircleLabel.swift; sourceTree = "<group>"; };
 		0BC2CD321D92BFB000ACEA5F /* OSCircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCircleImageView.swift; sourceTree = "<group>"; };
 		0BC2CD331D92BFB000ACEA5F /* OSEditableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSEditableTableViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				0B5A9D5D1EC04A0500F522E6 /* UIViewController+imageBackground.swift */,
 				0B5A9D5F1EC04A7E00F522E6 /* TransparentTableViewCell.swift */,
 				0B5A9D611EC04A9C00F522E6 /* TitleShadowButton.swift */,
+				0BB172CE1EEFF8750039E93A /* CALayer+XibConfiguration.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				0B5A9D601EC04A7E00F522E6 /* TransparentTableViewCell.swift in Sources */,
 				0B6B98C11D917FF5004E1031 /* OSiCloudDataBackup.swift in Sources */,
 				0B93371A1EED5B34004C7C73 /* PropertyListHelper.swift in Sources */,
+				0BB172CF1EEFF8750039E93A /* CALayer+XibConfiguration.swift in Sources */,
 				0B5A9D621EC04A9C00F522E6 /* TitleShadowButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
