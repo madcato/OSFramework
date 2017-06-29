@@ -27,6 +27,7 @@
 		0B6B98AC1D917F97004E1031 /* OSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6B989E1D917F97004E1031 /* OSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B6B98C11D917FF5004E1031 /* OSiCloudDataBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B98C01D917FF5004E1031 /* OSiCloudDataBackup.swift */; };
 		0B8BE47F1D9BB2B700A31E03 /* NSDate+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BE47D1D9BB2B700A31E03 /* NSDate+JSON.swift */; };
+		0B8D95051F05270F00DA5CE5 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8D95041F05270F00DA5CE5 /* KeychainPasswordItem.swift */; };
 		0B93371A1EED5B34004C7C73 /* PropertyListHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9337191EED5B34004C7C73 /* PropertyListHelper.swift */; };
 		0BB172CF1EEFF8750039E93A /* CALayer+XibConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB172CE1EEFF8750039E93A /* CALayer+XibConfiguration.swift */; };
 		0BB172D11EEFFAB60039E93A /* UIView+border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB172D01EEFFAB60039E93A /* UIView+border.swift */; };
@@ -82,6 +83,7 @@
 		0B6B98AB1D917F97004E1031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B6B98C01D917FF5004E1031 /* OSiCloudDataBackup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSiCloudDataBackup.swift; sourceTree = "<group>"; };
 		0B8BE47D1D9BB2B700A31E03 /* NSDate+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+JSON.swift"; sourceTree = "<group>"; };
+		0B8D95041F05270F00DA5CE5 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
 		0B9337191EED5B34004C7C73 /* PropertyListHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListHelper.swift; sourceTree = "<group>"; };
 		0BB172CE1EEFF8750039E93A /* CALayer+XibConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+XibConfiguration.swift"; sourceTree = "<group>"; };
 		0BB172D01EEFFAB60039E93A /* UIView+border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+border.swift"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 		0B6B989D1D917F97004E1031 /* OSFramework */ = {
 			isa = PBXGroup;
 			children = (
+				0B8D95031F0526F500DA5CE5 /* keychain */,
 				0BB172D21EF03EDD0039E93A /* net */,
 				0B62F2C31E51BE7F00CB634F /* eolo */,
 				0BF666BE1E48BEE30065D217 /* persistence */,
@@ -208,6 +211,14 @@
 			);
 			name = OSFrameworkTests;
 			path = Tests/OSFrameworkTests;
+			sourceTree = "<group>";
+		};
+		0B8D95031F0526F500DA5CE5 /* keychain */ = {
+			isa = PBXGroup;
+			children = (
+				0B8D95041F05270F00DA5CE5 /* KeychainPasswordItem.swift */,
+			);
+			path = keychain;
 			sourceTree = "<group>";
 		};
 		0BB172D21EF03EDD0039E93A /* net */ = {
@@ -401,6 +412,7 @@
 				0B62F2C91E51BFDE00CB634F /* SerializableWebQuery.swift in Sources */,
 				0BC2CD3A1D92BFC900ACEA5F /* Serializator.swift in Sources */,
 				0BC2CD441D9303BB00ACEA5F /* OSEmailValidator.swift in Sources */,
+				0B8D95051F05270F00DA5CE5 /* KeychainPasswordItem.swift in Sources */,
 				0B5A9D5E1EC04A0500F522E6 /* UIViewController+imageBackground.swift in Sources */,
 				0BB172DA1EF03FB30039E93A /* ServiceFactory.swift in Sources */,
 				0B4415E71EFB9629003B0FFA /* SortBy.swift in Sources */,
