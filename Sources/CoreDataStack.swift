@@ -64,8 +64,15 @@ class CoreDataStack: NSObject {
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
         let url = self.applicationDocumentsDirectory.appendingPathComponent("SingleViewCoreData.sqlite")
         let failureReason = "There was an error creating or loading the application's saved data."
+        let options = [
+            NSMigratePersistentStoresAutomaticallyOption: true,
+            NSInferMappingModelAutomaticallyOption: true
+        ]
         do {
-            try coordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: url, options: nil)
+            try coordinator.addPersistentStore(ofType: NSSQLiteStoreType,
+                                               configurationName: nil,
+                                               at: url,
+                                               options: options)
         } catch let error as NSError {
             // Report any error we got.
             var dict = [String: Any]()
@@ -89,12 +96,16 @@ class CoreDataStack: NSObject {
     private func createInMemoryPersistentStore() -> NSPersistentStoreCoordinator {
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
         let failureReason = "There was an error creating or loading the application's saved data."
+        let options = [
+            NSMigratePersistentStoresAutomaticallyOption: true,
+            NSInferMappingModelAutomaticallyOption: true
+        ]
         // Unit testing: store in memory
         do {
             try coordinator.addPersistentStore(ofType: NSInMemoryStoreType,
                                                configurationName: nil,
                                                at: nil,
-                                               options: nil)
+                                               options: options)
         } catch let error as NSError {
             // Report any error we got.
             var dict = [String: Any]()

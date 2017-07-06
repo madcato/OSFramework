@@ -8,7 +8,6 @@
 
 // DO NOT COMPILE THIS FILE
 
-
 // Ask user to enter pin
 // or authenticate throw TouchID setting LAPolicy.deviceOwnerAuthenticationWithBiometrics
 // https://developer.apple.com/documentation/localauthentication
@@ -17,11 +16,12 @@ import LocalAuthentication
 let myContext = LAContext()
 let myLocalizedReasonString = "To access wallet"
 
-var authError: NSError? = nil
+var authError: NSError?
 if #available(iOS 8.0, OSX 10.12, *) {
     if myContext.canEvaluatePolicy(LAPolicy.deviceOwnerAuthentication, error: &authError) {
-        myContext.evaluatePolicy(LAPolicy.deviceOwnerAuthentication, localizedReason: myLocalizedReasonString) { (success, evaluateError) in
-            if (success) {
+        myContext.evaluatePolicy(LAPolicy.deviceOwnerAuthentication,
+                                 localizedReason: myLocalizedReasonString) { (success, _) in
+            if success {
                 // User authenticated successfully, take appropriate action
                 NSLog("OK ")
             } else {
