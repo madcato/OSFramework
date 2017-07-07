@@ -18,7 +18,7 @@ class CoreDataStack: NSObject {
         self.managedObjectContext = NSManagedObjectContext()
         super.init()
         self.managedObjectModel = self.createObjectModel(modelName)
-        self.persistentStoreCoordinator = self.createPersistentStore(testing)
+        self.persistentStoreCoordinator = self.createPersistentStore(modelName + ".sqlite", testing: testing)
         self.managedObjectContext = self.createObjectContext(self.persistentStoreCoordinator)
     }
 
@@ -47,22 +47,22 @@ class CoreDataStack: NSObject {
         return managedObjectContext
     }
 
-    private func createPersistentStore(_ testing: Bool) -> NSPersistentStoreCoordinator {
+    private func createPersistentStore(_ fileName: String, testing: Bool) -> NSPersistentStoreCoordinator {
         if testing == true {
             return createInMemoryPersistentStore()
         } else {
-            return createSQLitePersistentStore()
+            return createSQLitePersistentStore(fileName)
         }
     }
 
-    private func createSQLitePersistentStore() -> NSPersistentStoreCoordinator {
+    private func createSQLitePersistentStore(_ fileName: String) -> NSPersistentStoreCoordinator {
         // The persistent store coordinator for the application. This implementation
         // creates and returns a coordinator, having added the store for the application
         // to it. This property is optional since there are legitimate error conditions
         // that could cause the creation of the store to fail.
         // Create the coordinator and store
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
-        let url = self.applicationDocumentsDirectory.appendingPathComponent("SingleViewCoreData.sqlite")
+        let url = self.applicationDocumentsDirectory.appendingPathComponent(fileName)
         let failureReason = "There was an error creating or loading the application's saved data."
         let options = [
             NSMigratePersistentStoresAutomaticallyOption: true,
