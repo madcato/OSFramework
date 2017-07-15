@@ -29,6 +29,7 @@
 		0B8BE47F1D9BB2B700A31E03 /* NSDate+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BE47D1D9BB2B700A31E03 /* NSDate+JSON.swift */; };
 		0B8D95051F05270F00DA5CE5 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8D95041F05270F00DA5CE5 /* KeychainPasswordItem.swift */; };
 		0B93371A1EED5B34004C7C73 /* PropertyListHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9337191EED5B34004C7C73 /* PropertyListHelper.swift */; };
+		0B97FEF11F1A732F00B6721A /* UIViewController+navigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97FEF01F1A732F00B6721A /* UIViewController+navigationItem.swift */; };
 		0BB172CF1EEFF8750039E93A /* CALayer+XibConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB172CE1EEFF8750039E93A /* CALayer+XibConfiguration.swift */; };
 		0BB172D11EEFFAB60039E93A /* UIView+border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB172D01EEFFAB60039E93A /* UIView+border.swift */; };
 		0BB172D41EF03EF20039E93A /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB172D31EF03EF20039E93A /* HttpRequest.swift */; };
@@ -86,6 +87,7 @@
 		0B8D95041F05270F00DA5CE5 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
 		0B8D95241F052AB800DA5CE5 /* snipets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = snipets.swift; sourceTree = "<group>"; };
 		0B9337191EED5B34004C7C73 /* PropertyListHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListHelper.swift; sourceTree = "<group>"; };
+		0B97FEF01F1A732F00B6721A /* UIViewController+navigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+navigationItem.swift"; sourceTree = "<group>"; };
 		0BB172CE1EEFF8750039E93A /* CALayer+XibConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+XibConfiguration.swift"; sourceTree = "<group>"; };
 		0BB172D01EEFFAB60039E93A /* UIView+border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+border.swift"; sourceTree = "<group>"; };
 		0BB172D31EF03EF20039E93A /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 				0B5A9D611EC04A9C00F522E6 /* TitleShadowButton.swift */,
 				0BB172CE1EEFF8750039E93A /* CALayer+XibConfiguration.swift */,
 				0BB172D01EEFFAB60039E93A /* UIView+border.swift */,
+				0B97FEF01F1A732F00B6721A /* UIViewController+navigationItem.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B62F2C91E51BFDE00CB634F /* SerializableWebQuery.swift in Sources */,
+				0B97FEF11F1A732F00B6721A /* UIViewController+navigationItem.swift in Sources */,
 				0BC2CD3A1D92BFC900ACEA5F /* Serializator.swift in Sources */,
 				0BC2CD441D9303BB00ACEA5F /* OSEmailValidator.swift in Sources */,
 				0B8D95051F05270F00DA5CE5 /* KeychainPasswordItem.swift in Sources */,
