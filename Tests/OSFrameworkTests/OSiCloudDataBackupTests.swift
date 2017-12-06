@@ -22,10 +22,10 @@ class OSiCloudDataBackupTests: XCTestCase {
             case .iCloudNotAllowed: break
             case .iCloudAllowed: break
             case .dataAvailable: break
-            case let .error(errorDescription):
-                print("Error detected", errorDescription)
+            case .error:
+                print("Error detected")
                 break
-            }
+          }
         }
     }
 
