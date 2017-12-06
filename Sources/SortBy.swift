@@ -8,19 +8,19 @@
 
 import Foundation
 
-class SortBy {
+public class SortBy {
     var sortDescriptors: [NSSortDescriptor]
 
     // Sample:
     //  - SortBy(["year", "month"])
     //  - SortBy([{"sort": "year", ascending: false}, "month"])
-    init(_ sortArray: [Any]) {
+    public init(_ sortArray: [Any]) {
         self.sortDescriptors = SortBy.sortDescriptors(sortArray)
     }
 
     // Sample:
     //  - SortBy("year")
-    init(_ sortBy: String) {
+    public init(_ sortBy: String) {
         self.sortDescriptors = SortBy.sortDescriptors([sortBy])
     }
 

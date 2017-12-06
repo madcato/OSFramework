@@ -152,7 +152,7 @@ public class CoreDataStack: NSObject {
 
     // MARK: - Core Data Saving support
 
-    func saveContext () {
+    public func saveContext () {
         if managedObjectContext.hasChanges {
             do {
                 try managedObjectContext.save()
@@ -170,7 +170,7 @@ public class CoreDataStack: NSObject {
 
     // MARK - Core Data quering
 
-    func getObjectFrom(_ entityName: String, _ wherePredicate: Where) -> NSManagedObject? {
+    public func getObjectFrom(_ entityName: String, _ wherePredicate: Where) -> NSManagedObject? {
         let fetchRequest = NSFetchRequest<NSManagedObject>()
         let entity = NSEntityDescription.entity(forEntityName: entityName, in: self.managedObjectContext)
         assert(entity != nil)
@@ -193,7 +193,7 @@ public class CoreDataStack: NSObject {
         }
     }
 
-    func getResultsFrom(_ entityName: String, _ sortBy: SortBy? = nil, _ wherePredicate: Where? = nil) -> [Any] {
+    public func getResultsFrom(_ entityName: String, _ sortBy: SortBy? = nil, _ wherePredicate: Where? = nil) -> [Any] {
         let fetchRequest = NSFetchRequest<NSManagedObject>()
         let entity = NSEntityDescription.entity(forEntityName: entityName, in: self.managedObjectContext)
         assert(entity != nil)
@@ -216,10 +216,11 @@ public class CoreDataStack: NSObject {
         }
     }
 
-   func createFetchedResultsController(_ entityName: String,
-                                       _ sortBy: SortBy? = nil,
-                                       _ wherePredicate: Where? = nil,
-                                       sectionNameKeyPath: String?) -> NSFetchedResultsController<NSManagedObject>? {
+   public func createFetchedResultsController(_ entityName: String,
+                                              _ sortBy: SortBy? = nil,
+                                              _ wherePredicate: Where? = nil,
+                                              sectionNameKeyPath: String?) ->
+                                              NSFetchedResultsController<NSManagedObject>? {
         let fetchRequest = NSFetchRequest<NSManagedObject>()
         let entity = NSEntityDescription.entity(forEntityName: entityName, in: self.managedObjectContext)
         assert(entity != nil)
@@ -240,7 +241,7 @@ public class CoreDataStack: NSObject {
         return aFetchedResultsController
     }
 
-    func fetch(_ fetchedResultController: NSFetchedResultsController<NSManagedObject>) {
+    public func fetch(_ fetchedResultController: NSFetchedResultsController<NSManagedObject>) {
         do {
             try fetchedResultController.performFetch()
         } catch let error as NSError {
@@ -248,13 +249,13 @@ public class CoreDataStack: NSObject {
         }
     }
 
-    func createObject(_ entityName: String) -> NSManagedObject? {
+    public func createObject(_ entityName: String) -> NSManagedObject? {
         let managedObject = NSEntityDescription.insertNewObject(forEntityName: entityName,
                                                                 into: self.managedObjectContext)
         return managedObject
     }
 
-    func deleteObjects(_ entityName: String, wherePredicate: Where? = nil) {
+    public func deleteObjects(_ entityName: String, wherePredicate: Where? = nil) {
         let fetchRequest = NSFetchRequest<NSManagedObject>()
         let entity = NSEntityDescription.entity(forEntityName: entityName, in: self.managedObjectContext)
         assert(entity != nil)
@@ -274,11 +275,11 @@ public class CoreDataStack: NSObject {
         }
     }
 
-    func delete(_ object: NSManagedObject) {
+    public func delete(_ object: NSManagedObject) {
         self.managedObjectContext.delete(object)
     }
 
-    func deleteAll(entities entityName: String) {
+    public func deleteAll(entities entityName: String) {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: entityName)
         fetchRequest.includesPropertyValues = false
         do {
@@ -293,7 +294,7 @@ public class CoreDataStack: NSObject {
 
     }
 
-    func count(_ entityName: String) -> Int {
+    public func count(_ entityName: String) -> Int {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
         request.includesPropertyValues = false
         do {

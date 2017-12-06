@@ -9,10 +9,10 @@
 import Foundation
 import CoreData
 
-struct Where {
+public class Where {
     var predicate: NSPredicate
 
-    init(predicate: String, arguments: [Any]?) {
+    public init(predicate: String, arguments: [Any]?) {
         self.predicate = NSPredicate(format: predicate, argumentArray: arguments)
     }
 }
