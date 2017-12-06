@@ -9,9 +9,9 @@
 import Foundation
 import CoreData
 
-class CoreDataStack: NSObject {
+public class CoreDataStack: NSObject {
 
-    init(modelName: String, testing: Bool = false) {
+    public init(modelName: String, testing: Bool = false) {
         assert(Thread.current.isMainThread == true) // Create this variable from the main thread
         self.managedObjectModel = NSManagedObjectModel()
         self.persistentStoreCoordinator = NSPersistentStoreCoordinator()
@@ -22,7 +22,7 @@ class CoreDataStack: NSObject {
         self.managedObjectContext = self.createObjectContext(self.persistentStoreCoordinator)
     }
 
-    init(backgroundWithMaster database: CoreDataStack) {
+    public init(backgroundWithMaster database: CoreDataStack) {
         assert(Thread.current.isMainThread == false) // Create this variable from a background thread
         self.managedObjectModel = database.managedObjectModel
         self.persistentStoreCoordinator = database.persistentStoreCoordinator
