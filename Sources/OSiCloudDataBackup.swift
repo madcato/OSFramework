@@ -115,11 +115,11 @@ public class OSiCloudDataBackup: NSObject {
         center.addObserver(self,
                            selector: #selector(OSiCloudDataBackup.iCloudValueChanged(notification:)),
                            name: NSUbiquitousKeyValueStore.didChangeExternallyNotification,
-                           object: NSUbiquitousKeyValueStore.default())
+                           object: NSUbiquitousKeyValueStore.default)
 
         // get changes that might have happened while this
         // instance of your app wasn't running
-        NSUbiquitousKeyValueStore.default().synchronize()
+        NSUbiquitousKeyValueStore.default.synchronize()
     }
 
     @objc func iCloudValueChanged(notification: Notification) {
@@ -146,7 +146,7 @@ public class OSiCloudDataBackup: NSObject {
      - Returns: the object
     */
     private func object(key: String) -> Any? {
-        let iCloudStore = NSUbiquitousKeyValueStore.default()
+        let iCloudStore = NSUbiquitousKeyValueStore.default
         let value = iCloudStore.object(forKey: key)
         return value
     }
@@ -158,7 +158,7 @@ public class OSiCloudDataBackup: NSObject {
      - Parameter key: key of the value to retrive
      */
     private func writeObject(object: Any?, forKey key: String) {
-        let iCloudStore = NSUbiquitousKeyValueStore.default()
+        let iCloudStore = NSUbiquitousKeyValueStore.default
         iCloudStore.set(object, forKey: key)
         iCloudStore.synchronize()
     }

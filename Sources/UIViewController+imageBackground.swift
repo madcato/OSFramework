@@ -11,7 +11,7 @@ import Foundation
 import UIKit
 
 public extension UIViewController {
-    func setAppBackground(imageName: String) {
+    @objc func setAppBackground(imageName: String) {
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: imageName)
         view.insertSubview(backgroundImage, at: 0)
