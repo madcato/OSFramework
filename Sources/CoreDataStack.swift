@@ -15,7 +15,7 @@ public class CoreDataStack: NSObject {
         assert(Thread.current.isMainThread == true) // Create this variable from the main thread
         self.managedObjectModel = NSManagedObjectModel()
         self.persistentStoreCoordinator = NSPersistentStoreCoordinator()
-        self.managedObjectContext = NSManagedObjectContext()
+        self.managedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         super.init()
         self.managedObjectModel = self.createObjectModel(modelName)
         self.persistentStoreCoordinator = self.createPersistentStore(modelName + ".sqlite", testing: testing)
