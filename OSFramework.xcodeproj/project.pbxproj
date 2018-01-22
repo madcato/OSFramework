@@ -15,6 +15,7 @@
 		0B4415E21EFB906B003B0FFA /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4415E11EFB906B003B0FFA /* CoreDataStack.swift */; };
 		0B4415E51EFB9560003B0FFA /* Where.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4415E41EFB9560003B0FFA /* Where.swift */; };
 		0B4415E71EFB9629003B0FFA /* SortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4415E61EFB9629003B0FFA /* SortBy.swift */; };
+		0B475FDA20166DFF00F6B95E /* InstallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B475FD920166DFF00F6B95E /* InstallManager.swift */; };
 		0B5A9D5A1EC049EA00F522E6 /* UIViewController+showAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5A9D591EC049EA00F522E6 /* UIViewController+showAlert.swift */; };
 		0B5A9D5E1EC04A0500F522E6 /* UIViewController+imageBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5A9D5D1EC04A0500F522E6 /* UIViewController+imageBackground.swift */; };
 		0B5A9D601EC04A7E00F522E6 /* TransparentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5A9D5F1EC04A7E00F522E6 /* TransparentTableViewCell.swift */; };
@@ -71,6 +72,7 @@
 		0B4415E11EFB906B003B0FFA /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		0B4415E41EFB9560003B0FFA /* Where.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Where.swift; sourceTree = "<group>"; };
 		0B4415E61EFB9629003B0FFA /* SortBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortBy.swift; sourceTree = "<group>"; };
+		0B475FD920166DFF00F6B95E /* InstallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallManager.swift; sourceTree = "<group>"; };
 		0B5652C71E3F3C5C00A42AF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B5A9D591EC049EA00F522E6 /* UIViewController+showAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+showAlert.swift"; sourceTree = "<group>"; };
 		0B5A9D5D1EC04A0500F522E6 /* UIViewController+imageBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+imageBackground.swift"; sourceTree = "<group>"; };
@@ -160,6 +162,14 @@
 			name = "Core Data Stack";
 			sourceTree = "<group>";
 		};
+		0B475FD820166DBB00F6B95E /* file */ = {
+			isa = PBXGroup;
+			children = (
+				0B475FD920166DFF00F6B95E /* InstallManager.swift */,
+			);
+			path = file;
+			sourceTree = "<group>";
+		};
 		0B62F2C31E51BE7F00CB634F /* eolo */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +200,7 @@
 		0B6B989D1D917F97004E1031 /* OSFramework */ = {
 			isa = PBXGroup;
 			children = (
+				0B475FD820166DBB00F6B95E /* file */,
 				0B74C4C91FFFB58A00BB3EA6 /* qr */,
 				0B8D95031F0526F500DA5CE5 /* keychain */,
 				0BB172D21EF03EDD0039E93A /* net */,
@@ -462,6 +473,7 @@
 				0BB172D81EF03F910039E93A /* Service.swift in Sources */,
 				0B2FA9BA1E389BF5003A1AF7 /* OSLoginViewModel.swift in Sources */,
 				0BB172D41EF03EF20039E93A /* HttpRequest.swift in Sources */,
+				0B475FDA20166DFF00F6B95E /* InstallManager.swift in Sources */,
 				0BC2CD461D93052D00ACEA5F /* OSDNIValidator.swift in Sources */,
 				0B5A9D641EC04ADA00F522E6 /* UrlHelper.swift in Sources */,
 				0BC2CD361D92BFB000ACEA5F /* OSEditableTableViewController.swift in Sources */,
