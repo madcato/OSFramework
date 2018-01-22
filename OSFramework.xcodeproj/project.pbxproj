@@ -50,6 +50,8 @@
 		0BC2CD441D9303BB00ACEA5F /* OSEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD431D9303BB00ACEA5F /* OSEmailValidator.swift */; };
 		0BC2CD461D93052D00ACEA5F /* OSDNIValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD451D93052D00ACEA5F /* OSDNIValidator.swift */; };
 		0BC2CD4B1D94757A00ACEA5F /* String+subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD4A1D94757A00ACEA5F /* String+subscript.swift */; };
+		0BDBD06C2015C8C30038A63D /* OSAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBD06B2015C8C30038A63D /* OSAppInfo.swift */; };
+		0BDBD06E2015C93D0038A63D /* CoreDataStack+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBD06D2015C93D0038A63D /* CoreDataStack+Query.swift */; };
 		0BF666C21E48BEF90065D217 /* SimplePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF666C11E48BEF90065D217 /* SimplePersistence.swift */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +114,8 @@
 		0BC2CD431D9303BB00ACEA5F /* OSEmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSEmailValidator.swift; sourceTree = "<group>"; };
 		0BC2CD451D93052D00ACEA5F /* OSDNIValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSDNIValidator.swift; sourceTree = "<group>"; };
 		0BC2CD4A1D94757A00ACEA5F /* String+subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+subscript.swift"; sourceTree = "<group>"; };
+		0BDBD06B2015C8C30038A63D /* OSAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSAppInfo.swift; sourceTree = "<group>"; };
+		0BDBD06D2015C93D0038A63D /* CoreDataStack+Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataStack+Query.swift"; sourceTree = "<group>"; };
 		0BF666C11E48BEF90065D217 /* SimplePersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePersistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				0B4415E11EFB906B003B0FFA /* CoreDataStack.swift */,
+				0BDBD06D2015C93D0038A63D /* CoreDataStack+Query.swift */,
 				0B4415E41EFB9560003B0FFA /* Where.swift */,
 				0B4415E61EFB9629003B0FFA /* SortBy.swift */,
 			);
@@ -213,6 +218,7 @@
 				0BC2CD2E1D92BFA500ACEA5F /* views */,
 				0B6B989E1D917F97004E1031 /* OSFramework.h */,
 				0BC2CD3D1D92BFDF00ACEA5F /* OSSystem.swift */,
+				0BDBD06B2015C8C30038A63D /* OSAppInfo.swift */,
 				0B6B989F1D917F97004E1031 /* Info.plist */,
 				0B334BA11D99253500DE68CA /* PublicHeader.h */,
 				0B5652C71E3F3C5C00A42AF3 /* AppDelegate.swift */,
@@ -474,6 +480,8 @@
 				0B2FA9BA1E389BF5003A1AF7 /* OSLoginViewModel.swift in Sources */,
 				0BB172D41EF03EF20039E93A /* HttpRequest.swift in Sources */,
 				0B475FDA20166DFF00F6B95E /* InstallManager.swift in Sources */,
+				0BDBD06E2015C93D0038A63D /* CoreDataStack+Query.swift in Sources */,
+				0BDBD06C2015C8C30038A63D /* OSAppInfo.swift in Sources */,
 				0BC2CD461D93052D00ACEA5F /* OSDNIValidator.swift in Sources */,
 				0B5A9D641EC04ADA00F522E6 /* UrlHelper.swift in Sources */,
 				0BC2CD361D92BFB000ACEA5F /* OSEditableTableViewController.swift in Sources */,
