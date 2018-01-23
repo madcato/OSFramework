@@ -8,21 +8,21 @@
 
 import UIKit
 
-class OSSystem {
+public class OSSystem {
     // When the mobile detects something near the display, turn off it
-    static func enableProximitySensor() {
+    public static func enableProximitySensor() {
         UIDevice.current.isProximityMonitoringEnabled = true
     }
     // Disable proximity sensor
-    static func disableProximitySensor() {
+    public static func disableProximitySensor() {
         UIDevice.current.isProximityMonitoringEnabled = false
     }
 
-    static func radians(degrees: Double) -> Double {
+    public static func radians(degrees: Double) -> Double {
         return degrees * Double.pi / 180
     }
 
-    static func getDateFormatCurrentLocale(dateComponents: String) -> String? {
+    public static func getDateFormatCurrentLocale(dateComponents: String) -> String? {
         let locale = NSLocale.current
         let dateFormat = DateFormatter.dateFormat(fromTemplate: dateComponents,
                                                   options: 0,
@@ -30,11 +30,11 @@ class OSSystem {
         return dateFormat
     }
 
-    static func disableIdleTimer() {
+    public static func disableIdleTimer() {
         UIApplication.shared.isIdleTimerDisabled = true
     }
 
-    static func loadDictionaryFromResource(fileName: String) -> NSMutableDictionary? {
+    public static func loadDictionaryFromResource(fileName: String) -> NSMutableDictionary? {
         guard let path = Bundle.main.path(forResource: fileName, ofType: "plist") else {
             return nil
         }
@@ -42,7 +42,7 @@ class OSSystem {
         return plist
     }
 
-    static func loadArrayFromResource(fileName: String) -> NSMutableArray? {
+    public static func loadArrayFromResource(fileName: String) -> NSMutableArray? {
         guard let path = Bundle.main.path(forResource: fileName, ofType: "plist") else {
             return nil
         }
@@ -50,31 +50,31 @@ class OSSystem {
         return plist
     }
 
-    static func redrawView(view: UIView) {
+    public static func redrawView(view: UIView) {
         view.setNeedsDisplay()
     }
 
-    static func existObjectInConfiguration(_ objectName: String) -> Bool {
+    public static func existObjectInConfiguration(_ objectName: String) -> Bool {
         guard UserDefaults.standard.object(forKey: objectName) != nil else {
             return false
         }
         return true
     }
 
-    static func createObjectInConfiguration(_ object: Any?, forKey objectName: String) {
+    public static func createObjectInConfiguration(_ object: Any?, forKey objectName: String) {
         UserDefaults.standard.set(object, forKey: objectName)
         UserDefaults.standard.synchronize()
     }
 
-    static func loadFromConfig(_ objectName: String) -> Any? {
+    public static func loadFromConfig(_ objectName: String) -> Any? {
         return UserDefaults.standard.object(forKey: objectName)
     }
 
-    static func getPreferredLanguage() -> String? {
+    public static func getPreferredLanguage() -> String? {
         return NSLocale.current.languageCode
     }
 
-    static func batteryLevel() -> Float {
+    public static func batteryLevel() -> Float {
         let device = UIDevice.current
         device.isBatteryMonitoringEnabled = true
         let level = device.batteryLevel
@@ -82,15 +82,15 @@ class OSSystem {
         return level
     }
 
-    static func screenBright() -> CGFloat {
+    public static func screenBright() -> CGFloat {
         return UIScreen.main.brightness
     }
 
-    static func setScreenBright(_ bright: CGFloat) {
+    public static func setScreenBright(_ bright: CGFloat) {
         UIScreen.main.brightness = bright
     }
 
-    static func registerUserDefaults() {
+    public static func registerUserDefaults() {
         guard let settingsBundle = Bundle.main.path(forResource: "Settings",
                                        ofType: "bundle") else {
             NSLog("Could not find Settings.bundle")
@@ -103,7 +103,7 @@ class OSSystem {
         }
     }
 
-    static func collectProperties(_ preferences: NSArray) -> [String: Any] {
+    public static func collectProperties(_ preferences: NSArray) -> [String: Any] {
     var defaultsToRegister: [String: Any] = [:]
         for case let prefSpecification as NSDictionary in preferences {
             if let key = prefSpecification["Key"] as? String {

@@ -12,7 +12,6 @@ import Foundation
 
 public class InstallManager {
     public init() {
-
     }
 
     public func getDocumentsDirectory() -> URL {
