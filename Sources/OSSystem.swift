@@ -114,4 +114,10 @@ public class OSSystem {
         }
         return defaultsToRegister
     }
+
+    public static func generateUUID() -> String {
+        let uuid = NSUUID()
+        let uuidStr = uuid.uuidString
+        return uuidStr
+    }
 }
