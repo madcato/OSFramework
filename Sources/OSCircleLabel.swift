@@ -36,7 +36,7 @@ class OSCircleLabel: UILabel {
         let height = CGFloat(radious) * 2
 
         let circleLayer = CAShapeLayer.init()
-        circleLayer.path = UIBezierPath.init(ovalIn: CGRect(x: x, y:  y, width: width, height: height)).cgPath
+        circleLayer.path = UIBezierPath.init(ovalIn: CGRect(x: x, y: y, width: width, height: height)).cgPath
 
         self.layer.mask = circleLayer
     }

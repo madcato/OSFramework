@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 extension CoreDataStack {
-    // MARK - Core Data quering
+    // MARK: - Core Data quering
 
     public func getObjectFrom(_ entityName: String, _ wherePredicate: Where) -> NSManagedObject? {
         let fetchRequest = NSFetchRequest<NSManagedObject>()

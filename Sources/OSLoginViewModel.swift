@@ -105,18 +105,20 @@ public class OSLoginViewModel: OSLoginViewModelProtocol {
         state = .progressing
         loginInteractor.doLogin(email, password: password, onOK: { [unowned self] in
                 self.state = .stateOk
-        }) { [unowned self] (code: Int, message: String) in
+        },
+                                onError: { [unowned self] (code: Int, message: String) in
                 self.state = .error(code, message)
-        }
+        })
     }
 
     public func doRecover(_ email: String) {
         state = .progressing
         loginInteractor.doRecover(email, onOK: { [unowned self] in
             self.state = .recoverOk
-        }) { [unowned self] (code: Int, message: String) in
+        },
+                                  onError: { [unowned self] (code: Int, message: String) in
             self.state = .error(code, message)
-        }
+        })
     }
 
     public func save(_ email: String, password: String) {

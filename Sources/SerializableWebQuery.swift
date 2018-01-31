@@ -10,7 +10,7 @@ import Foundation
 
 class SerializableWebQuery: NSObject, NSCoding {
     var url: String
-    var parameters: [String : Any]
+    var parameters: [String: Any]
     var sender: EoloSenderInteractor?
 
     init(url: String, parameters: [String: Any], sender: EoloSenderInteractor) {
@@ -20,13 +20,16 @@ class SerializableWebQuery: NSObject, NSCoding {
     }
 
     func start(_ onOK: @escaping () -> Void, onError: @escaping () -> Void ) {
-        sender?.postJSON(url: self.url, parameters: self.parameters, onOK: { (_) in
+        sender?.postJSON(url: self.url,
+                         parameters: self.parameters,
+                         onOK: { (_) in
             // Revome this object in Serrializable data
             onOK()
-        }) { (_, _) in
+        },
+                         onError: { (_, _) in
             // Keep this object in seriliable data
             onError()
-        }
+        })
     }
 
     func stop() {

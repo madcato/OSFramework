@@ -18,8 +18,9 @@ public extension UIResponder {
                           options: UIViewAnimationOptions.transitionCrossDissolve,
                           animations: {
             window?.rootViewController = viewController
-        }) { (ended: Bool) in
+        },
+                          completion: { (ended: Bool) in
             onEnd(ended)
-        }
+        })
     }
 }

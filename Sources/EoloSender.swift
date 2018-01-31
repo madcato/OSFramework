@@ -10,7 +10,7 @@ import Foundation
 
 public protocol EoloSenderInteractor {
     func postJSON(url: String,
-                  parameters: [String:Any],
+                  parameters: [String: Any],
                   onOK: @escaping (Any?) -> Void,
                   onError: @escaping (Int, String) -> Void)
     func cancel()

@@ -24,7 +24,6 @@ class OSiCloudDataBackupTests: XCTestCase {
             case .dataAvailable: break
             case .error:
                 print("Error detected")
-                break
           }
         }
     }

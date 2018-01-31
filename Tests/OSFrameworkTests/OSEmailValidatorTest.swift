@@ -35,6 +35,6 @@ class OSEmailValidatorTest: XCTestCase {
     }
 
     func testBadEmail2() {
-        XCTAssertFalse(validator.isValid(email:" veladan@gmail"), "Mail validator fail verifing a bad email 2")
+        XCTAssertFalse(validator.isValid(email: " veladan@gmail"), "Mail validator fail verifing a bad email 2")
     }
 }

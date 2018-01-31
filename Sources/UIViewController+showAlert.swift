@@ -12,7 +12,7 @@ import UIKit
 public extension UIViewController {
     func showAlert(_ message: String, title: String? = nil, onFinish: @escaping () -> Void = {}) {
         if #available(iOS 8.0, *) {
-            let alert = UIAlertController(title: title, message:message, preferredStyle: .alert)
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in onFinish() })
             self.present(alert, animated: true) {}
         } else {
