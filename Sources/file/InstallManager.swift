@@ -14,13 +14,17 @@ public class InstallManager {
     public init() {
     }
 
+    public func destinationFileURL(_ fileName: String) -> URL {
+        return getDocumentsDirectory().appendingPathComponent(fileName)
+    }
+
     public func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0]
     }
 
     public func saveFileToDocumentsDirectory(fileName: String) {
-        let toUrl = getDocumentsDirectory().appendingPathComponent(fileName)
+        let toUrl = destinationFileURL(fileName)
         guard let fromUrl = Bundle.main.url(forResource: fileName, withExtension: nil) else {
             NSLog("File %@ doesn't exists", fileName)
             return
