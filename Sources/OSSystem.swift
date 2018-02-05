@@ -74,6 +74,10 @@ public class OSSystem {
         return NSLocale.current.languageCode
     }
 
+    public static func getLocaleIdentifier() -> String {
+        return Locale.current.identifier
+    }
+
     public static func batteryLevel() -> Float {
         let device = UIDevice.current
         device.isBatteryMonitoringEnabled = true
