@@ -8,8 +8,6 @@
 
 import Foundation
 
-import UIKit
-
 public extension UIViewController {
     @objc func setAppBackground(imageName: String) {
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)

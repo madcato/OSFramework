@@ -7,7 +7,6 @@
 //
 // Doc: https://www.appcoda.com/barcode-reader-swift/
 
-import UIKit
 import AVFoundation
 
 @objc

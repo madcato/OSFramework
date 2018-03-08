@@ -6,8 +6,6 @@
 //  Copyright © 2016 veladan. All rights reserved.
 //
 
-import UIKit
-
 public class OSSystem {
     // When the mobile detects something near the display, turn off it
     public static func enableProximitySensor() {

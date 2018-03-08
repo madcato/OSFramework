@@ -8,8 +8,6 @@
 // Doc: https://www.unicorn-it.de/developing-reusable-views-in-a-swift-framework/
 // Doc: https://www.appcoda.com/qr-code-generator-tutorial/
 
-import UIKit
-
 @objc public protocol QRViewDataSource {
     func qrValueToShow() -> String
 }

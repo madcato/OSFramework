@@ -6,8 +6,6 @@
 //  Copyright © 2016 Daniel Vela. All rights reserved.
 //
 
-import UIKit
-
 protocol OSDataSource {
     func count() -> Int
     func get(index: Int) -> String

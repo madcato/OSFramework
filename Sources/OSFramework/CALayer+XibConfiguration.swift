@@ -7,7 +7,6 @@
 //
 
 import QuartzCore
-import UIKit
 
 // Use thid class to indicate the color of the border from 
 // Interface Builder in User Defined Runtime Attributes

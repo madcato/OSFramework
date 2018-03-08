@@ -6,8 +6,6 @@
 //  Copyright © 2016 Daniel Vela. All rights reserved.
 //
 
-import UIKit
-
 public extension UIResponder {
     func changeRootControllerTo(_ viewController: UIViewController,
                                 window: UIWindow?,

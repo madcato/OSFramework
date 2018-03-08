@@ -6,8 +6,6 @@
 //  Copyright © 2016 Daniel Vela. All rights reserved.
 //
 
-import UIKit
-
 /**
  Delegate of class OSiCloudDataBackup. Methods are called to indicate a 
  change of the state of the class or to indicate some error.

@@ -6,7 +6,6 @@
 //  Copyright © 2017 Daniel Vela. All rights reserved.
 //
 
-import UIKit
 import QuartzCore
 
 class TitleShadowButton: UIButton {

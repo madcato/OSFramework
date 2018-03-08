@@ -6,8 +6,6 @@
 //  Copyright © 2017 Daniel Vela. All rights reserved.
 //
 
-import UIKit
-
 extension UIView {
 
     @IBInspectable var cornerRadius: CGFloat {

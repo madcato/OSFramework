@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 public extension UIViewController {
     func showAlert(_ message: String, title: String? = nil, onFinish: @escaping () -> Void = {}) {

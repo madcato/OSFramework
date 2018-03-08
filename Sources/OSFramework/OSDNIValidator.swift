@@ -6,8 +6,6 @@
 //  Copyright © 2016 Daniel Vela. All rights reserved.
 //
 
-import UIKit
-
 /**
  Spanish DNI and NIE validator.
  It does not validate NIF.

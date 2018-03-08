@@ -6,8 +6,6 @@
 //  Copyright © 2017 Daniel Vela. All rights reserved.
 //
 
-import UIKit
-
 class UrlHelper {
     func launch(_ urlStr: String) {
         if let url = URL(string: urlStr) {

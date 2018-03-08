@@ -75,7 +75,7 @@
 		0B4415E11EFB906B003B0FFA /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		0B4415E41EFB9560003B0FFA /* Where.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Where.swift; sourceTree = "<group>"; };
 		0B4415E61EFB9629003B0FFA /* SortBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortBy.swift; sourceTree = "<group>"; };
-		0B475FD920166DFF00F6B95E /* InstallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallManager.swift; sourceTree = "<group>"; };
+		0B475FD920166DFF00F6B95E /* InstallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InstallManager.swift; path = file/InstallManager.swift; sourceTree = "<group>"; };
 		0B5652C71E3F3C5C00A42AF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B5A9D591EC049EA00F522E6 /* UIViewController+showAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+showAlert.swift"; sourceTree = "<group>"; };
 		0B5A9D5D1EC04A0500F522E6 /* UIViewController+imageBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+imageBackground.swift"; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 		0B74C4D01FFFB5EA00BB3EA6 /* QRCaptureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCaptureView.swift; sourceTree = "<group>"; };
 		0B753D352020601C00B974F9 /* OSSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSSystemTests.swift; sourceTree = "<group>"; };
 		0B8BE47D1D9BB2B700A31E03 /* NSDate+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+JSON.swift"; sourceTree = "<group>"; };
-		0B8D95041F05270F00DA5CE5 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
+		0B8D95041F05270F00DA5CE5 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainPasswordItem.swift; path = keychain/KeychainPasswordItem.swift; sourceTree = "<group>"; };
 		0B8D95241F052AB800DA5CE5 /* snipets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = snipets.swift; sourceTree = "<group>"; };
 		0B9337191EED5B34004C7C73 /* PropertyListHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListHelper.swift; sourceTree = "<group>"; };
 		0B97FEF01F1A732F00B6721A /* UIViewController+navigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+navigationItem.swift"; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 			children = (
 				0B475FD920166DFF00F6B95E /* InstallManager.swift */,
 			);
-			path = file;
+			name = file;
 			sourceTree = "<group>";
 		};
 		0B62F2C31E51BE7F00CB634F /* eolo */ = {
@@ -227,7 +227,7 @@
 				0B8D95241F052AB800DA5CE5 /* snipets.swift */,
 			);
 			name = OSFramework;
-			path = Sources;
+			path = Sources/OSFramework;
 			sourceTree = "<group>";
 		};
 		0B6B98A81D917F97004E1031 /* OSFrameworkTests */ = {
@@ -275,7 +275,7 @@
 			children = (
 				0B8D95041F05270F00DA5CE5 /* KeychainPasswordItem.swift */,
 			);
-			path = keychain;
+			name = keychain;
 			sourceTree = "<group>";
 		};
 		0BB172D21EF03EDD0039E93A /* net */ = {
@@ -660,7 +660,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = Sources/OSFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -684,7 +684,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = Sources/OSFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
