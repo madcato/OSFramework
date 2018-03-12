@@ -6,7 +6,6 @@
 //  Copyright © 2017 Daniel Vela. All rights reserved.
 //
 
-
 extension UIViewController {
     func setRightBarButtonItem(_ item: UIBarButtonItem) {
         navigationController?.navigationBar.topItem?.rightBarButtonItem = item
