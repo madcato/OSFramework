@@ -31,6 +31,7 @@
 		0BC2CD461D93052D00ACEA5F /* OSDNIValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD451D93052D00ACEA5F /* OSDNIValidator.swift */; };
 		0BC2CD4B1D94757A00ACEA5F /* String+subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD4A1D94757A00ACEA5F /* String+subscript.swift */; };
 		0BDBD06C2015C8C30038A63D /* OSAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBD06B2015C8C30038A63D /* OSAppInfo.swift */; };
+		3411E9482189BA6B00FE97F8 /* GenericModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411E9472189BA6B00FE97F8 /* GenericModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0B6B989A1D917F97004E1031;
 			remoteInfo = OSFramework;
+		};
+		3411E96B2189CD2400FE97F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3411E9672189CD2300FE97F8 /* Pru.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3411E9522189CD2200FE97F8;
+			remoteInfo = Pru;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -73,6 +81,8 @@
 		0BC2CD451D93052D00ACEA5F /* OSDNIValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSDNIValidator.swift; sourceTree = "<group>"; };
 		0BC2CD4A1D94757A00ACEA5F /* String+subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+subscript.swift"; sourceTree = "<group>"; };
 		0BDBD06B2015C8C30038A63D /* OSAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSAppInfo.swift; sourceTree = "<group>"; };
+		3411E9472189BA6B00FE97F8 /* GenericModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GenericModel.swift; path = ../../Pru/Pru/GenericModel.swift; sourceTree = "<group>"; };
+		3411E9672189CD2300FE97F8 /* Pru.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pru.xcodeproj; path = Pru/Pru.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +125,7 @@
 		0B6B98911D917F97004E1031 = {
 			isa = PBXGroup;
 			children = (
+				3411E9672189CD2300FE97F8 /* Pru.xcodeproj */,
 				0B6B989D1D917F97004E1031 /* OSFramework */,
 				0B6B98A81D917F97004E1031 /* OSFrameworkTests */,
 				0B6B989C1D917F97004E1031 /* Products */,
@@ -144,6 +155,7 @@
 				0B334BA11D99253500DE68CA /* PublicHeader.h */,
 				0B5652C71E3F3C5C00A42AF3 /* AppDelegate.swift */,
 				0B8D95241F052AB800DA5CE5 /* snipets.swift */,
+				3411E9472189BA6B00FE97F8 /* GenericModel.swift */,
 			);
 			name = OSFramework;
 			path = Sources/OSFramework;
@@ -185,6 +197,14 @@
 				0B8BE47D1D9BB2B700A31E03 /* NSDate+JSON.swift */,
 			);
 			name = formats;
+			sourceTree = "<group>";
+		};
+		3411E9682189CD2300FE97F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3411E96C2189CD2400FE97F8 /* Pru.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +266,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Daniel Vela";
 				TargetAttributes = {
 					0B6B989A1D917F97004E1031 = {
@@ -273,6 +293,12 @@
 			mainGroup = 0B6B98911D917F97004E1031;
 			productRefGroup = 0B6B989C1D917F97004E1031 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3411E9682189CD2300FE97F8 /* Products */;
+					ProjectRef = 3411E9672189CD2300FE97F8 /* Pru.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0B6B989A1D917F97004E1031 /* OSFramework */,
@@ -280,6 +306,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3411E96C2189CD2400FE97F8 /* Pru.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Pru.app;
+			remoteRef = 3411E96B2189CD2400FE97F8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0B6B98991D917F97004E1031 /* Resources */ = {
@@ -322,6 +358,7 @@
 				0B97FEF11F1A732F00B6721A /* UIViewController+navigationItem.swift in Sources */,
 				0BC2CD3A1D92BFC900ACEA5F /* Serializator.swift in Sources */,
 				0BC2CD441D9303BB00ACEA5F /* OSEmailValidator.swift in Sources */,
+				3411E9482189BA6B00FE97F8 /* GenericModel.swift in Sources */,
 				0B5A9D5E1EC04A0500F522E6 /* UIViewController+imageBackground.swift in Sources */,
 				0B2FA9BA1E389BF5003A1AF7 /* OSLoginViewModel.swift in Sources */,
 				0BDBD06C2015C8C30038A63D /* OSAppInfo.swift in Sources */,
@@ -374,6 +411,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -381,6 +419,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -436,6 +475,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -443,6 +483,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

@@ -1,0 +1,1 @@
+This project was intended to test some codes from OSFramework. DON'T USE IT

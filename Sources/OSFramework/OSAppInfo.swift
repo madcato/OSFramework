@@ -10,24 +10,24 @@ import Foundation
 
 class OSAppInfo {
     static func appName() -> String {
-        guard let v = Bundle.main.infoDictionary?["CFBundleName"] as? String else {
+        guard let appNameStr = Bundle.main.infoDictionary?["CFBundleName"] as? String else {
             return "app_name"
         }
-        return v
+        return appNameStr
     }
 
     static func appVersion() -> String {
-        guard let v = Bundle.main.infoDictionary?["CFBundleShortVersionString"]  as? String else {
+        guard let appVersionStr = Bundle.main.infoDictionary?["CFBundleShortVersionString"]  as? String else {
             return "app_version"
         }
-        return v
+        return appVersionStr
     }
 
     static func appBuildVersion() -> String {
-        guard let v = Bundle.main.infoDictionary?["CFBundleVersion"]  as? String else {
+        guard let appBuildVersionStr = Bundle.main.infoDictionary?["CFBundleVersion"]  as? String else {
             return "app_buidl_version"
         }
-        return v
+        return appBuildVersionStr
     }
 
     static func updateAppVersionInSettings() {
