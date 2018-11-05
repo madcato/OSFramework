@@ -11,7 +11,7 @@ public enum LoginState {
     case progressing
     case stateOk
     case recoverOk
-    case error(Int, String)  // swiftlint:disable:this identifier_name
+    case error(Int, String)
 }
 
 public protocol OSLoginInteractor {

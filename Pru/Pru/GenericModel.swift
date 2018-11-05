@@ -7,8 +7,8 @@
 //
 
 enum ModelError: Error {
-    case parameterNotExists(parameter: String)  // swiftlint:disable:this identifier_name
-    case invalidTypeAssignment(parameter: String)  // swiftlint:disable:this identifier_name
+    case parameterNotExists(parameter: String)
+    case invalidTypeAssignment(parameter: String)
 }
 
 protocol PropertyAdapter {
