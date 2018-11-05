@@ -32,6 +32,7 @@
 		0BC2CD4B1D94757A00ACEA5F /* String+subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD4A1D94757A00ACEA5F /* String+subscript.swift */; };
 		0BDBD06C2015C8C30038A63D /* OSAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBD06B2015C8C30038A63D /* OSAppInfo.swift */; };
 		3411E9482189BA6B00FE97F8 /* GenericModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411E9472189BA6B00FE97F8 /* GenericModel.swift */; };
+		342560E6219028200057094A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342560E4219028200057094A /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		0BDBD06B2015C8C30038A63D /* OSAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSAppInfo.swift; sourceTree = "<group>"; };
 		3411E9472189BA6B00FE97F8 /* GenericModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GenericModel.swift; path = ../../Pru/Pru/GenericModel.swift; sourceTree = "<group>"; };
 		3411E9672189CD2300FE97F8 /* Pru.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pru.xcodeproj; path = Pru/Pru.xcodeproj; sourceTree = "<group>"; };
+		342560E4219028200057094A /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				0B334BA11D99253500DE68CA /* PublicHeader.h */,
 				0B5652C71E3F3C5C00A42AF3 /* AppDelegate.swift */,
 				0B8D95241F052AB800DA5CE5 /* snipets.swift */,
+				342560E4219028200057094A /* Observable.swift */,
 				3411E9472189BA6B00FE97F8 /* GenericModel.swift */,
 			);
 			name = OSFramework;
@@ -355,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342560E6219028200057094A /* Observable.swift in Sources */,
 				0B97FEF11F1A732F00B6721A /* UIViewController+navigationItem.swift in Sources */,
 				0BC2CD3A1D92BFC900ACEA5F /* Serializator.swift in Sources */,
 				0BC2CD441D9303BB00ACEA5F /* OSEmailValidator.swift in Sources */,

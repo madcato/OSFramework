@@ -31,25 +31,25 @@ class AgeProperyAdapter: PropertyAdapter {
 }
 
 class ConcreteObservableModel: GenericModel {
-    fileprivate var _obs_name: Observable<String> = Observable<String>("")
-    fileprivate var _obs_age: Observable<Int> = Observable<Int>(0)
+    fileprivate var obsName: Observable<String> = Observable<String>("")
+    fileprivate var obsAge: Observable<Int> = Observable<Int>(0)
 }
 
 class ConcreteModel: ConcreteObservableModel, Decodable {
     var name: String {
         get {
-            return super._obs_name.value
+            return super.obsName.value
         }
         set {
-            super._obs_name.value = newValue
+            super.obsName.value = newValue
         }
     }
     var age: Int {
         get {
-            return super._obs_age.value
+            return super.obsAge.value
         }
         set {
-        super._obs_age.value = newValue
+        super.obsAge.value = newValue
         }
     }
 

@@ -9,12 +9,12 @@
 // https://colindrake.me/post/an-observable-pattern-implementation-in-swift/
 //
 
-typealias ObserverBlock<T> = (_ newValue: T, _ oldValue: T) -> ()
+typealias ObserverBlock<T> = (_ newValue: T, _ oldValue: T) -> Void
 
 protocol ObservableProtocol {
-    associatedtype T
-    var value: T { get set }
-    func subscribe(_ observer: AnyObject, block: @escaping ObserverBlock<T>)
+    associatedtype AType
+    var value: AType { get set }
+    func subscribe(_ observer: AnyObject, block: @escaping ObserverBlock<AType>)
     func unsubscribe(_ observer: AnyObject)
 }
 
@@ -71,7 +71,7 @@ public final class Observable<T>: ObservableProtocol {
         }
     }
 
-    static func <<<T>(_ this: Observable<T>, _ value: T) {
+    static func << <T>(_ this: Observable<T>, _ value: T) {
         this.value = value
     }
 }
