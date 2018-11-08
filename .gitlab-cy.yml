@@ -1,0 +1,12 @@
+stages:
+  - build
+
+build_project:
+  stage: build
+  script:
+    - xcodebuild clean -project OSFramework.xcodeproj -scheme OSFramework | xcpretty
+    - xcodebuild test -project OSFramework.xcodeproj -scheme OSFramework -destination 'platform=iOS Simulator,name=iPhone 6s,OS=9.2' | xcpretty -s
+  tags:
+    - xcode
+    
+    
