@@ -8,6 +8,15 @@ build_project:
     - xcodebuild test -project OSFramework.xcodeproj -scheme OSFramework -destination 'platform=iOS Simulator,name=iPhone X,OS=11.4' | xcpretty -s
   tags:
     - xcode
-    
+
+lint:
+  stage: build
+  script:
+    - xxxxx
+  tags:
+    - mac-mini
+  only:
+    - merge-requests
+
 variables:
   GIT_SSL_NO_VERIFY: "1"
