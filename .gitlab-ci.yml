@@ -9,4 +9,5 @@ build_project:
   tags:
     - xcode
     
-    
+variables:
+  GIT_SSL_NO_VERIFY: "1"
