@@ -32,6 +32,7 @@
 		0BC2CD4B1D94757A00ACEA5F /* String+subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2CD4A1D94757A00ACEA5F /* String+subscript.swift */; };
 		0BDBD06C2015C8C30038A63D /* OSAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBD06B2015C8C30038A63D /* OSAppInfo.swift */; };
 		3411E9482189BA6B00FE97F8 /* GenericModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411E9472189BA6B00FE97F8 /* GenericModel.swift */; };
+		34229324220C2717009682D6 /* WaitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34229323220C2717009682D6 /* WaitButton.swift */; };
 		342560E6219028200057094A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342560E4219028200057094A /* Observable.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		0BDBD06B2015C8C30038A63D /* OSAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSAppInfo.swift; sourceTree = "<group>"; };
 		3411E9472189BA6B00FE97F8 /* GenericModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GenericModel.swift; path = ../../Pru/Pru/GenericModel.swift; sourceTree = "<group>"; };
 		3411E9672189CD2300FE97F8 /* Pru.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pru.xcodeproj; path = Pru/Pru.xcodeproj; sourceTree = "<group>"; };
+		34229323220C2717009682D6 /* WaitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitButton.swift; sourceTree = "<group>"; };
 		342560E4219028200057094A /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 		0B6B989D1D917F97004E1031 /* OSFramework */ = {
 			isa = PBXGroup;
 			children = (
+				34229326220C271C009682D6 /* control */,
 				0B2FA9B81E389BE8003A1AF7 /* login */,
 				0B2FA9B41E389B43003A1AF7 /* utils */,
 				0BC2CD371D92BFB700ACEA5F /* formats */,
@@ -208,6 +211,14 @@
 				3411E96C2189CD2400FE97F8 /* Pru.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		34229326220C271C009682D6 /* control */ = {
+			isa = PBXGroup;
+			children = (
+				34229323220C2717009682D6 /* WaitButton.swift */,
+			);
+			name = control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +373,7 @@
 				0B97FEF11F1A732F00B6721A /* UIViewController+navigationItem.swift in Sources */,
 				0BC2CD3A1D92BFC900ACEA5F /* Serializator.swift in Sources */,
 				0BC2CD441D9303BB00ACEA5F /* OSEmailValidator.swift in Sources */,
+				34229324220C2717009682D6 /* WaitButton.swift in Sources */,
 				3411E9482189BA6B00FE97F8 /* GenericModel.swift in Sources */,
 				0B5A9D5E1EC04A0500F522E6 /* UIViewController+imageBackground.swift in Sources */,
 				0B2FA9BA1E389BF5003A1AF7 /* OSLoginViewModel.swift in Sources */,

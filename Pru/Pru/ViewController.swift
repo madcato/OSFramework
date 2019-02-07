@@ -10,8 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var waitButton: WaitButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    @IBAction func buttonTouched(_ sender: Any, forEvent event: UIEvent) {
+        _ = 3
+    }
+
+    @IBAction func resetTapped(_ sender: Any) {
+        waitButton.reset()
     }
 }

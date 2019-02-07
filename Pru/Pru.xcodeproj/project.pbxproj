@@ -14,6 +14,7 @@
 		3411E9602189CD2300FE97F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3411E95E2189CD2300FE97F8 /* LaunchScreen.storyboard */; };
 		3411E96E2189CD8800FE97F8 /* GenericModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411E96D2189CD8700FE97F8 /* GenericModel.swift */; };
 		3411E9702189D0A300FE97F8 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411E96F2189D0A300FE97F8 /* Observable.swift */; };
+		3422932A220C3177009682D6 /* WaitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34229329220C3177009682D6 /* WaitButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3411E9612189CD2300FE97F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3411E96D2189CD8700FE97F8 /* GenericModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericModel.swift; sourceTree = "<group>"; };
 		3411E96F2189D0A300FE97F8 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = ../../Sources/OSFramework/Observable.swift; sourceTree = "<group>"; };
+		34229329220C3177009682D6 /* WaitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaitButton.swift; path = ../../Sources/OSFramework/WaitButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		3411E9542189CD2200FE97F8 /* Pru */ = {
 			isa = PBXGroup;
 			children = (
+				34229329220C3177009682D6 /* WaitButton.swift */,
 				3411E96F2189D0A300FE97F8 /* Observable.swift */,
 				3411E96D2189CD8700FE97F8 /* GenericModel.swift */,
 				3411E9552189CD2200FE97F8 /* AppDelegate.swift */,
@@ -145,6 +148,7 @@
 				3411E96E2189CD8800FE97F8 /* GenericModel.swift in Sources */,
 				3411E9582189CD2200FE97F8 /* ViewController.swift in Sources */,
 				3411E9562189CD2200FE97F8 /* AppDelegate.swift in Sources */,
+				3422932A220C3177009682D6 /* WaitButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
