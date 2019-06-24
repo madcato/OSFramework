@@ -13,7 +13,7 @@ public extension UIResponder {
         // Show main view with animation
         UIView.transition(with: window!,
                           duration: 0.8,
-                          options: UIViewAnimationOptions.transitionCrossDissolve,
+                          options: UIView.AnimationOptions.transitionCrossDissolve,
                           animations: {
             window?.rootViewController = viewController
         },

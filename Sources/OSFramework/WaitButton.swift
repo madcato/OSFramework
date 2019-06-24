@@ -22,7 +22,7 @@ protocol WaitButtonProtocol {
 class WaitButton: UIButton {
     var activityStyle = UIActivityIndicatorView.Style.gray
     private lazy var activityView: UIActivityIndicatorView = {
-        let activity = UIActivityIndicatorView.init(style: activityStyle)
+        let activity = UIActivityIndicatorView(style: activityStyle)
         // Set the control in the middle of the button
         let position = CGPoint(x: frame.size.width / 2, y: frame.size.height / 2)
         activity.center = position

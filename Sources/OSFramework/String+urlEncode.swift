@@ -19,7 +19,7 @@ public enum URLPiece {
 }
 
 public extension String {
-    public func encodeUrl(piece: URLPiece) -> String? {
+    func encodeUrl(piece: URLPiece) -> String? {
         var characterSet: CharacterSet
         switch piece {
         case .user:
@@ -38,7 +38,7 @@ public extension String {
         return self.addingPercentEncoding(withAllowedCharacters: characterSet)
     }
 
-    public func decodeUrl() -> String? {
+    func decodeUrl() -> String? {
         return self.removingPercentEncoding
     }
 }

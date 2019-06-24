@@ -7,7 +7,7 @@
 //
 
 public enum LoginState {
-    case `init`
+    case initial
     case progressing
     case stateOk
     case recoverOk
@@ -80,7 +80,7 @@ public class OSLoginViewModel: OSLoginViewModelProtocol {
     var savedLogin: OSSavedLoginInteractor
 
     public required init(loginInteractor: OSLoginInteractor, savedLoginInteractor: OSSavedLoginInteractor) {
-        state = .init
+        state = .initial
         self.loginInteractor = loginInteractor
         self.savedLogin = savedLoginInteractor
         if let login = self.savedLogin.login {
