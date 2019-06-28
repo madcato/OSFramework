@@ -17,6 +17,7 @@
 		0B6B98A51D917F97004E1031 /* OSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B6B989B1D917F97004E1031 /* OSFramework.framework */; };
 		0B6B98AA1D917F97004E1031 /* OSFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B98A91D917F97004E1031 /* OSFrameworkTests.swift */; };
 		0B6B98AC1D917F97004E1031 /* OSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6B989E1D917F97004E1031 /* OSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B6C51D422C69E2000D8F2FC /* OSiCloudDataBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6C51D322C69E2000D8F2FC /* OSiCloudDataBackup.swift */; };
 		0B753D362020601C00B974F9 /* OSSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B753D352020601C00B974F9 /* OSSystemTests.swift */; };
 		0B8BE47F1D9BB2B700A31E03 /* NSDate+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BE47D1D9BB2B700A31E03 /* NSDate+JSON.swift */; };
 		0B93371A1EED5B34004C7C73 /* PropertyListHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9337191EED5B34004C7C73 /* PropertyListHelper.swift */; };
@@ -68,6 +69,7 @@
 		0B6B98A41D917F97004E1031 /* OSFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6B98A91D917F97004E1031 /* OSFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSFrameworkTests.swift; sourceTree = "<group>"; };
 		0B6B98AB1D917F97004E1031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B6C51D322C69E2000D8F2FC /* OSiCloudDataBackup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSiCloudDataBackup.swift; sourceTree = "<group>"; };
 		0B753D352020601C00B974F9 /* OSSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSSystemTests.swift; sourceTree = "<group>"; };
 		0B8BE47D1D9BB2B700A31E03 /* NSDate+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+JSON.swift"; sourceTree = "<group>"; };
 		0B8D95241F052AB800DA5CE5 /* snipets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = snipets.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		0B6B989D1D917F97004E1031 /* OSFramework */ = {
 			isa = PBXGroup;
 			children = (
+				0B6C51D122C69DF900D8F2FC /* cloud */,
 				34229326220C271C009682D6 /* control */,
 				0B2FA9B81E389BE8003A1AF7 /* login */,
 				0B2FA9B41E389B43003A1AF7 /* utils */,
@@ -178,6 +181,14 @@
 			);
 			name = OSFrameworkTests;
 			path = Tests/OSFrameworkTests;
+			sourceTree = "<group>";
+		};
+		0B6C51D122C69DF900D8F2FC /* cloud */ = {
+			isa = PBXGroup;
+			children = (
+				0B6C51D322C69E2000D8F2FC /* OSiCloudDataBackup.swift */,
+			);
+			name = cloud;
 			sourceTree = "<group>";
 		};
 		0BC2CD2E1D92BFA500ACEA5F /* views */ = {
@@ -390,6 +401,7 @@
 				0B8BE47F1D9BB2B700A31E03 /* NSDate+JSON.swift in Sources */,
 				0B93371A1EED5B34004C7C73 /* PropertyListHelper.swift in Sources */,
 				0BB172CF1EEFF8750039E93A /* CALayer+XibConfiguration.swift in Sources */,
+				0B6C51D422C69E2000D8F2FC /* OSiCloudDataBackup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,8 +553,11 @@
 		0B6B98B01D917F97004E1031 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				COPY_HEADERS_RUN_UNIFDEF = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -559,14 +574,18 @@
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Debug;
 		};
 		0B6B98B11D917F97004E1031 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				COPY_HEADERS_RUN_UNIFDEF = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -582,6 +601,7 @@
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Release;
 		};
